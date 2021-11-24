@@ -5,10 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALERDO | Gallery</title>
     <link rel="stylesheet" href="style1.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
+        nav{
+            background:black;
+            width:100%;
+            padding:10px 0;
+            z-index:12;
+            padding:10px 0;
+        }
+
+        nav .menu{
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: sticky;
+        }
+
+        .menu .logo a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 35px;
+                font-weight: 600;
+        }
+
+        .menu ul{
+            display: inline-flex;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-left:7px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            background:black;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .img{
+            background-image: url(./Photos/background-1.jpeg);
+            height:100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+        }
+
+        .center{
+            position: absolute;
+            top:42%;
+            width:100%;
+            /* background: red; */
+            padding:0 20px;
+            text-align: center;
+        }
+
+        .center .title{
+            color: white;
+            font-size: 100px;
+            font-weight: 600;
+        }
+
+        .center .subtitle{
+            color:white;
+            font-size:30px;
+            font-weight:200;
+        }
+
+        .center .btns{
+            margin-top:20px;
+        }
+
+        .center .btns button {
+            height: 55px;
+            width:170px;
+            border-radius: 5px;
+            border:none;
+            margin: 0 10px;
+            border: 2px solid white;
+            font-size:20px;
+            font-weight:500;
+            padding:0 10px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .center .btns button:first-child{
+            color:white;
+            background:none;
+        }
+        </style>
 </head>
+
 <body>
     
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">ALERDO</a>
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+            </ul>
+        </div>
+    </nav>
     <h1>OUR PHOTO GALLERY</h1>
 
     <div class="gallery">
