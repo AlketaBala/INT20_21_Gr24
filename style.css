@@ -101,13 +101,13 @@ nav .menu{
     color:white;
     background:none;
 }
-.Footer
+#Footer
 {
-    background-color: rgb(10, 6, 6);
+    background-color: rgb(253, 243, 243);
     margin: 2 2;
     padding: 0px;
 }
-.Footer ul li a
+#Footer ul li a
 {
     color: rgb(255, 255, 255);
     margin: 2 2;
