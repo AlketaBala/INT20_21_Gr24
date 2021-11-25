@@ -9,7 +9,7 @@ Krijimi i ALERDO photography website
 <meta name="description " content="Affordable and professional web design">
 <meta name="keywords" content="web design, affordable web design">
 <meta name="author" content="Brad Traversy">
-<title>Acme Web Design |Welcome </title>
+<title>Alerdo Photography |Welcome </title>
 
 
 
