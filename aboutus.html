@@ -5,16 +5,34 @@
         
         <style>
 
-.container {
-	padding: 0;
-}
+button {
+		padding: 0.1em;
+		width: 10em;
+		height: 10em;
+		position: relative;
+    background-color:#000000;
+    border: 0em solid;
+	}
+	button img {
+		border-radius: 1px;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+    z-index: 1;
+		box-shadow: 0;
+		width: 10em;
 
-.spalte {
+    transition: all 3s;
+	}
+	button:hover img {
+		border: 2em solid rgb(245, 43, 43);
+		border-radius: 1em;
+		position: absolute;
+		width: 400%;
+    z-index: 5;
+		box-shadow: 1px 1px 5px rgb(0, 0, 0);
+		transition: all 3s;
 
-	border: 1px solid rgb(194, 194, 194);
-	margin: 5px;
-	padding: 5px;
-	display: inline-block;
 }
 
 table {
@@ -89,18 +107,15 @@ tr:nth-child(even) {
             </section>
             
             
-            <div class="container"><center>
-              <section class="spalte">
-              <img src="Alketa.jpg" alt="Alketa Bala" style="width:200px;height:200px;"><br>
-              <a href="#Alketa">Alketa</a>
-              </section><section class="spalte">
-              <img src="erza.jpg" alt="Erza Qorri" style="width:200px;height:200px;"><br>
-              <a href="#Erza">Erza</a>
-              </section><section class="spalte">
-              <img src="doruntina.jpg" alt="Doruntina Muja" style="width:200px;height:200px;"><br>
-               <a href="#Doruntina">Doruntina</a>
-              </section>
-              </center></div>
+            <center>
+
+              <button><img src="Alketa.jpg" alt="Alketa Bala"></button>
+              <button><img src="erza.jpg" alt="Erza Qorri"></button>
+              <button><img src="doruntina.jpg" alt="Doruntina Muja"></button>
+              <br>
+              <a href="#Alketa">Alketa</a><span style="margin-left:90px;margin-right:70px;"><a href="#Erza">Erza</a></span><a href="#Doruntina">Doruntina</a>
+            </center>
+            
             <br><br><br>
             <p style="text-align:center;">You can read more about us and our love for photography.</p>
             <br><br><br>

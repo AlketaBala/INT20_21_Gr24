@@ -1,65 +1,177 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Welcome to ALERDO Website">
-	<meta name="keywords" content="photography website ">
-  	<meta name="author" content="Erza Qorri, Alketa Bala,Doruntina Muja">
-    <title>ALERDO | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
-  <body>
+    <head>
+        <title>Home</title>
+        <style>
+                *{
+                    margin:0;
+                    padding:0;
+                    box-sizing: border-box;
+                    font-family: 'Poppins', sans-serif;
+                }
 
-<header>
-    
-    <div class="container">
-    <div id="branding">
-    <h1><span class="highlight">ALERDO</span></h1>
-    </div>
-    <nav>
-      <ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="stafandcontact.html">Staf and contact</a></li>
-      </ul>  
-    </nav>
-</div>
+                nav{
+                    background:black;
+                    width:100%;
+                    padding:10px 0;
+                    z-index:12;
+                    padding:10px 0;
+                }
 
-</header>
-<section id="showcase">
+                nav .menu{
+                    max-width: 1250px;
+                    margin: auto;
+                    display: flex;
+                    align-items:center;
+                    justify-content: space-between;
+                    padding: 0 20px;
+                    position: sticky;
+                }
 
-<div class="container">
-  <h1>Welcome to ALERDO'photography Website</h1>
-  <p>“There is one thing the photo must contain – the humanity of the moment.”</p>
-</div>
+                .menu .logo a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 35px;
+                        font-weight: 600;
+                }
 
-<section id="boxes">
-<div class="container">
-<form>
-<label >Subscribe to our website</label>
-  <input type="email"placeholder="Enter Email...">
-  <button type="submit"class="button_1">Subscribe</button>
+                .menu ul{
+                    display: inline-flex;
+                }
 
-</form>
-</div>
-</section>
+                .menu ul li {
+                    list-style: none;
+                    margin-left:7px;
+                }
 
-<section id="boxes">
-<div class="container">
-<h1>Our Technology</h1>
-<h3>Canon EOS R5 </h3>
-<img src="./FOTO/canon.jpg"width="400" height="200">
+                .menu ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    background:black;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                }
 
-</div>
+                .img{
+                    background-image: url(./Photos/background-1.jpeg);
+                    height:100%;
+                    width: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position:relative;
+                }
 
-</section>
-</section>
-<footer>
-  <p> ALERDO's photography Website,2021</p>
-</footer>
+                .center{
+                    position: absolute;
+                    top:42%;
+                    width:100%;
+                    /* background: red; */
+                    padding:0 20px;
+                    text-align: center;
+                }
+
+                .center .title{
+                    color: white;
+                    font-size: 100px;
+                    font-weight: 600;
+                }
+
+                .center .subtitle{
+                    color:white;
+                    font-size:30px;
+                    font-weight:200;
+                }
+
+                .center .btns{
+                    margin-top:20px;
+                }
+
+                .center .btns button {
+                    height: 55px;
+                    width:170px;
+                    border-radius: 5px;
+                    border:none;
+                    margin: 0 10px;
+                    border: 2px solid white;
+                    font-size:20px;
+                    font-weight:500;
+                    padding:0 10px;
+                    cursor: pointer;
+                    outline: none;
+                }
+
+                .center .btns button:first-child{
+                    color:white;
+                    background:none;
+                }
+                .Footer
+                {
+                    background-color: rgb(10, 6, 6);
+                    margin: 2 2;
+                    padding: 0px;
+                }
+                .Footer ul li a
+                {
+                    color: rgb(255, 255, 255);
+                    margin: 2 2;
+                    padding: 0 40;
+                }
+                p{
+                  text-align: center;
+                  color: white;
+                }
+                
+                 
+                
+                
+                 
+              
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">ALERDO</a>
+                </div>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="./aboutus.html">About us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            <div class="img"></div>
+            <div class="center">
+                <div class="title"> Welcome to ALERDO </div>
+                <div class="subtitle">  <q title="This is a quote"style ="color:white; ">  <i> Life is like a camera.Just focus on what's important and capture the good times,develop from the negatives and if things dont'work out, just take <b>another shot.</b></i></q> </div>
+                
+                <div class="btns">
+                    <button>Learn about us</button>
+                    <button>Gallery</button>
+                </div>
+            </div>
+             <div class="Footer">
+                 <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Email us</a></li>
+                    <li><a href="#">instagram</a>
+                    <li><a href="#"></a></li>
+                    
+                 </ul> 
+                 <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
+                 <div class="OurWork">
+                     <p> ALERDO was created by three passionate photographers <a href="">Erza,</a> <a href="">,Doruntina</a><a href=""> ,Alketa.</a></p>
+                 </div>
+                 </div>
+           
 
 
-  </body>
-  </html>
+    </body>
+</html>
