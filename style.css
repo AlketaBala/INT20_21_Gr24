@@ -103,23 +103,16 @@ nav .menu{
 }
 #Footer
 {
-    background-color: rgb(253, 243, 243);
-    margin: 2 2;
-    padding: 0px;
+    background-color: rgb(10, 6, 6);
+    margin: 2px 2px ;
+    padding-top: 50px;
+    padding-left: 10px;
+    
 }
 #Footer ul li a
 {
     color: rgb(255, 255, 255);
-    margin: 2 2;
-    padding: 0 40;
-}
-.Ourwork p{
-  text-align: center;
-  color: white;
-}
-.OurWork p{
-    text-align: center;
-    color: white;
-  }
+    margin:  2px 2px ;
   
- 
+}
+
