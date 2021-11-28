@@ -103,13 +103,16 @@ nav .menu{
 }
 #Footer
 {
-    background-color: rgb(253, 243, 243);
-    margin: 2 2;
-    padding: 0px;
+    background-color: rgb(10, 6, 6);
+    margin: 2px 2px ;
+    padding-top: 50px;
+    padding-left: 10px;
+    
 }
 #Footer ul li a
 {
     color: rgb(255, 255, 255);
+<<<<<<< HEAD
     margin: 2 2;
     padding: 0 40;
 }
@@ -128,3 +131,9 @@ nav .menu{
 
  
  
+=======
+    margin:  2px 2px ;
+  
+}
+
+>>>>>>> 1622fb7e1e7ce356ae7cc8069a2f2ef81ac1eeeb
