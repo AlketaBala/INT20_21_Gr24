@@ -112,7 +112,9 @@ nav .menu{
 #Footer ul li a
 {
     color: rgb(255, 255, 255);
-    margin:  2px 2px ;
-  
+
+    margin: 2 2;
+    padding: 0 40;
 }
 
+ 
