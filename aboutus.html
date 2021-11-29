@@ -5,71 +5,81 @@
         <link rel="stylesheet" href="style.css">
         
         <style>
+          a{
+            font-size: 18px;
+            text-decoration: none;
+            color:red;
+            padding:10px;
+            margin-top: 20px;
 
-button {
-		padding: 0.1em;
-		width: 10em;
-		height: 10em;
-		position: relative;
-    background-color:#000000;
-    border: 0em solid;
-	}
-	button img {
-		border-radius: 1px;
-		position: absolute;
-		left: 0%;
-		top: 0%;
-    z-index: 1;
-		box-shadow: 0;
-		width: 10em;
+          }
 
-    transition: all 3s;
-	}
-	button:hover img {
-		border: 2em solid rgb(245, 43, 43);
-		border-radius: 1em;
-		position: absolute;
-		width: 400%;
-    z-index: 5;
-		box-shadow: 1px 1px 5px rgb(0, 0, 0);
-		transition: all 3s;
+          button {
+		        padding: 0.1em;
+		        width: 10em;
+		        height: 10em;
+		        position: relative;
+            background-color:#000000;
+            border: 0em solid;
+	        }
+	        button img {
+		        border-radius: 1px;
+		        position: absolute;
+		        left: 0%;
+		        top: 0%;
+            z-index: 1;
+		        box-shadow: 0;
+		        width: 10em;
+            transition: all 3s;
+	        }
+	        button:hover img {
+		        border: 2em solid rgb(245, 43, 43);
+		        border-radius: 1em;
+		        position: absolute;
+		        width: 400%;
+            z-index: 5;
+		        box-shadow: 1px 1px 5px rgb(0, 0, 0);
+		        transition: all 3s;
+          }
 
-}
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            border-spacing: 30px;
+            width: 55%;
+            align-self: center;
+            color:white;
+          }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  border-spacing: 30px;
-  width: 55%;
-  align-self: center;
-  color:white;
-}
+          td, th {
+            border: 0.1em solid #ffffff;
+            border-radius: 0 2em 2em 2em;
+            text-align: left;
+            padding: 20px;
+            font-family:arial, sans-serif;
+            font-size: 16px;
+          }
 
-td, th {
-  border: 0.1em solid #ffffff;
-  border-radius: 0 2em 2em 2em;
-  text-align: left;
-  padding: 20px;
-  font-family:arial, sans-serif;
-  font-size: 16px;
-}
+          tr:nth-child(even) {
+            background-color: #202020;
+          }
+          aside#sidebar{
+            float: right;
+            width:350px;
+            border-radius: 20px;
+            margin-top:50px;
+            margin-right:50px;
+            background-color: #202020
+          }
+          .shkelqimi img {
+            opacity: 0.3;
+          }
 
-tr:nth-child(even) {
-  background-color: #202020;
-}
-aside#sidebar{
-    float: right;
-    width:350px;
-    border-radius: 20px;
-    margin-top:50px;
-    margin-right:50px;
-    background-color: #202020
-    
-   
-  }
+          .shkelqimi img:hover {
+            opacity: 1;
+          }
       
-      </style>
-
+        </style>
     </head>
     <body>
         <nav>
@@ -80,7 +90,6 @@ aside#sidebar{
                 <ul>
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./aboutus.html">About us</a></li>
-
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./feedback.html">Feedback</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -89,55 +98,47 @@ aside#sidebar{
         </nav>
 
         <div class="container">
-
             <section class="about_us_section">
               <h1 style="margin-top:20px; margin-left:25em">ABOUT OUR PASSION </h1>
               <p style="color:black;margin-top:20px; margin-left:40px; margin-left: 20em; margin-bottom: 40px;"><b> ALERDO was created by three passionate photographers that wanted to bring art into digital space</b></p>
             </section>
             
-            </div>
-            </section>
+        </div>
             
-            
-            <center>
+        <center>
 
-              <button><img src="Alketa.jpg" alt="Alketa Bala"></button>
-              <button><img src="erza.jpg" alt="Erza Qorri"></button>
-              <button><img src="doruntina.jpg" alt="Doruntina Muja"></button>
-              <br>
-              <a href="#Alketa">Alketa</a><span style="margin-left:90px;margin-right:70px;"><a href="#Erza">Erza</a></span><a href="#Doruntina">Doruntina</a>
-            </center>
+            <button><img src="Alketa.jpg" alt="Alketa Bala"></button>
+            <button><img src="erza.jpg" alt="Erza Qorri"></button>
+            <button><img src="doruntina.jpg" alt="Doruntina Muja"></button>
+            <br><br>
+            <a href="#Alketa">Alketa</a><span style="margin-left:90px;margin-right:70px;"><a href="#Erza">Erza</a></span><a href="#Doruntina">Doruntina</a>
+        </center>
             <br><br><br>
             
             
-            <div class="menu">
+          <div class="menu">
               <aside id="sidebar">
                   <div class="dark">
-                  <h3 style="color:rgb(255, 255, 255);text-align: left;margin-top:25px; margin-left: 25px;">What we do?</h3>
-                  <p style="color:rgb(255, 255, 255); text-align: right;margin-top: 50px;margin-right: 25px; margin-bottom: 25px;">Alerdo is a photographic studio. Alerdo offers services for any type of professional photography, lambing, and photos for different documents. </p>
-              </div>
+                   <h3 style="color:rgb(255, 255, 255);text-align: left;margin-top:25px; margin-left: 25px;">What we do?</h3>
+                   <p style="color:rgb(255, 255, 255); text-align: right;margin-top: 50px;margin-right: 25px; margin-bottom: 25px;">Alerdo is a photographic studio. Alerdo offers services for any type of professional photography, lambing, and photos for different documents. </p>
+                  </div>
               </aside>
               
-              </div>
+          </div>
               
-            </div>
-
-
-            
-
-            <br><br><br>
+           <br><br><br>
             <p style="color:black; margin-top: 20em; margin-bottom:10em; margin-left: 30em;"><b>You can read more about us and our love for photography.</b></p>
             <br><br><br>
             
 
             <center>
               <h1 id="Doruntina" >Doruntina</h1>
-        <!-------------------------------------------------------------- Tabelat ------------------------------------------------>
-              <table border="2px" style="border-color: white;">
+        <!----------------------------------------------------------------- Tabelat --------------------------------------------------------->
+          <table border="2px" style="border-color: white;">
               <tr style="color:black">
-               <th>Surname:</th><th>Muja</th>           
+              <th>Surname:</th><th>Muja</th>           
               </tr><tr>
-                <td colspan="2"> Name: <span style="margin-left: 8em; color:white;"><b>Doruntina</b></span></td>
+              <td colspan="2"> Name: <span style="margin-left: 8em; color:white;"><b>Doruntina</b></span></td>
               </tr><tr style="color:black">
                 <td>Contact details:</td><td>Email:<a href="mailto: doruntinamuja@gmail.com"> doruntinamuja@gmail.com</a> Tel: <a href="tel:+38344587987">  044-587-987 </a></td>
               </tr><tr>
@@ -156,10 +157,10 @@ aside#sidebar{
                   It’s a gift we can’t take for granted.
                 </td>
              </tr>               
-            </table>
+          </table>
                         
                         
-            <h1 id="Alketa" style="margin-top: 2em;">Alketa</h1>
+          <h1 id="Alketa" style="margin-top: 2em;">Alketa</h1>
             <table style="border: 2px solid rgb(214, 214, 231);">
               <tr style="color:black">
                 <th>Surname:</th>
@@ -168,7 +169,7 @@ aside#sidebar{
               </tr>
               <tr >
                
-               <td colspan="2">Name: <span style="margin-left: 8em; color:white;"><b>Alketa</b></span></td>
+              <td colspan="2">Name: <span style="margin-left: 8em; color:white;"><b>Alketa</b></span></td>
               </tr>
               <tr style="color:black">
                 <td>Contact details:</td><td>Email:<a href="mailto: alketabala11@gmail.com"> alketabala11@gmail.com</a> Tel: <a href="tel:+38344235487">  044-235-487 </a></td>
@@ -242,27 +243,18 @@ loading="lazy">
 
    <!-------------------------------------------------------------- Foter ------------------------------------------------>
 
-    
-<div id="Footer" style="text-align: left;">
-  <ul>
-      <ul>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="https://www.instagram.com/alerdophotography/">Instagram</a>
-          <li><a href="https://www.facebook.com/Alerdo-Photography-100473962483971">Facebook</a></li>
-          <li><a href="./feedback.html">  Please give use a feedback</a></li>
+  <div id="Footer" style="text-align: center;">
+  
+    <div class="shkelqimi img">
+     <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><img src="f.png"></a>
+     <a href="https://www.instagram.com/alerdophotography/"><img src="i.png"></a>
+     <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><img src="g.png"></a>        
+     <a href="Tel:+38344842697"><img src="tel.png"></a>
+     <a href="./contact.html"><img src="m.png"></a> 
+    </div>
+  <br>
+  <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
+  </div>
 
-          
-       </ul> 
-
-
-<h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
-
-
-</div>
-
-    
-   
-
-        
 </body>
 </html>
