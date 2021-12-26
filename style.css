@@ -6,7 +6,7 @@
 }
 
 nav{
-    background:black;
+    background:rgb(0, 0, 0);
     width:100%;
     padding:10px 0;
     padding:10px 0;
@@ -24,11 +24,14 @@ nav .menu{
 
 .menu .logo a{
         text-decoration: none;
-        color: #fff;
+        color: rgb(255, 255, 255);
         font-size: 35px;
         font-weight: 600;
 }
-
+.menu.logo
+{
+    display: inline;
+}
 .menu ul{
     display: inline-flex;
 }
@@ -40,13 +43,14 @@ nav .menu{
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
     background:black;
     padding: 8px 15px;
     
 }
+
 
 .img{
     background-image: url(./Photos/background-1.jpeg);
@@ -114,5 +118,3 @@ nav .menu{
     margin: 2 2;
     padding: 0 40;
 }
-
- 
