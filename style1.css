@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(15, 11, 11);
+    background-color: gray;
     font-family: sans-serif;
 }
 .container{
@@ -74,7 +74,10 @@ label:first-child{
 }
 
 label:hover{
-    color: black;
+    color: rgb(121, 11, 11);
+}
+label:first-child:hover{
+    color: rgb(121, 11, 11);
 }
 .gallery{
     width: 90%;
