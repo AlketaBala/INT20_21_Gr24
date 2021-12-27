@@ -22,6 +22,15 @@
 
     <body>
         <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="tips.html">Photography Tips</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="application.html">Application Form </a>
+        </div>
+        
+        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
             <div class="menu">
                 <div class="logo">
                     <h1 title="Created by Erza,Alketa,Doruntina"><a href="./index.html">ALERDO</a></h1>
@@ -32,6 +41,9 @@
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./feedback.html">Feedback</a></li>
+                    <form class="search-form">
+                      <input type="text" placeholder="Search">
+                      <i class="fa fa-search" style="color:rgb(250, 250, 250); border-radius: 50px;"></i></form>
                 </ul>
             </div>
         </nav>
@@ -48,83 +60,7 @@
                 </div>
             </div>
 
-    <div class="Lists">    
-            <h2><mark>EVERY PHOTO TELLS A STORY</mark></h2><br>
-            
-    <!----------------------------------------------------------------- Perdorimi i getElementById -------------------------------------->
 
-<p id="demo">More about Storytelling. Click on the button </p>
-<button type="button" onclick="myFunction()">Click Me!</button>
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = " Storytelling is timeless; an activity that has been taking place for hundreds & thousands of years. Stories are an integral part of human history & culture with written & verbal tales passed down from generation to generation. A photograph will capture & freeze a moment in time whilst conveying an emotion, expressing a mood, sharing an idea & telling a narrative. All key elements of storytelling.";
-}
-</script>
-           
-    
-          
-            <br><br>
-            <h3 >THINGS TO CONSIDER WHEN PLANNING YOUR PHOTO STORY:</h3><br>
-          <ul>
-            <li>What is your story about?</li>
-            <li> Who is in your story? Do you need to involve other people?</li>
-            <li> What research is needed? Is your story about a subject you are familiar with?</li>
-            <li> What equipment will you need? With careful planning, almost everything could be shot on a simple phone camera.</li>
-            <li> Where & when are you going to shoot your narrative?</li>
-
-
-          </ul>
-          <br>
-
-    
-             <h3>CONSIDER YOUR BEGINNING, MIDDLE & END</h3><br>
-
-
-              <ul>
-              <li><u>IDEAS FOR INTRODUCTORY SHOTS</u></li><br>
-            <ul>
-             <li>A wide landscape shot, setting the scene & showing the location of your story.</li>
-             <li>A suitcase & train ticket illustrating the start of a journey.  </li>
-             </ul>
-            </li><br>
-            <li><u>IDEAS FOR CONCLUSION SHOTS</u></li><br>
-           <ol>
-           <li>Sunset at the end of your travels (although this could be considered a cliche shot!)  </li>
-           <li>The blowing out of candles on a birthday cake, the end of a year  </li>
-           <ul>
-              <li>A happy client</li>
-           </ul>
-          </ol><br><br>
-
-             <h3>THEMES</h3><br>
-          <p>To keep your story interesting, you should aim for variety in your images. However, you also want visual consistency to create 
-             a cohesive story. 
-             Consider visual or stylistic themes that you could interweave throughout your story to tie your images together.
-
-           </p><br>
-          <dl>
-          <dt>Visual</dt>
-         <dd>a picture, piece of film, or display used to illustrate or accompany something.</dd>
-          <dt>Stylistic</dt>
-           <dd>of or concerning style, especially literary style. </dd>
-         </dl>
-          <br><br>
-
-          <h3>HOW TO DO STORYTELLING WITH YOUR IMAGES: 6 USEFUL TIPS</h3><br>
-          <ol>
-
-            <li>Include small details to tell a story in a single frame  </li>
-            <li>Aim for variety in a series of shots    </li>
-            <li>Take control of the entire frame    </li>
-            <li>Plan ahead with a shot list    </li>
-            <li>Emotions are an important part of storytelling    </li>
-            <li>Don’t forget about the basics    </li>
-          </ol> <br>
-
-
-           <a href="https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/" target="_blank" > See 35 powerful photos that tell a story</a>
-
-    </div>
             <div id="Footer">
                     
                         <ul>
@@ -143,7 +79,16 @@ function myFunction() {
             </div>
 
               
-
+            <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+  
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+            </script>
 
     </body>
 </html>
