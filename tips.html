@@ -60,6 +60,9 @@
                 height: 100px;
                 background-color: black;
                 border: 1px solid black;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
 
                 }
             #myDiva {
@@ -76,7 +79,11 @@
                 background-color: black;
                 border: 1px solid black;
                 }
-
+                @keyframes example {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:grey; left:200px; top:0px;}
+  
+  
 
    </style>
 </head>
@@ -159,6 +166,7 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
           <br><br>
 
           
+
             <div id="myDiv">
             </div>
 
