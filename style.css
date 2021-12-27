@@ -61,13 +61,8 @@ nav .menu{
 }
 
 .img{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Photos/background-1.jpeg);
-    height:100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    margin-bottom: -21px;
+   
 }
 
 .center{
@@ -76,6 +71,8 @@ nav .menu{
     width:100%;
     padding:0 20px;
     text-align: center;
+    margin-top: -200px;
+
 }
 
 .center .title{

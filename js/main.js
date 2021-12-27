@@ -1,23 +1,29 @@
-let  navStatus=false;
 
-let navBar=function()
-{
-    let getSidebar=document.querySelector(".nav-sidebar");
-    let getSidebarUl=document.querySelector(".nav-sidebar ul");
-    let getSidebarTitle=document.querySelector(".nav-sidebar span");
-    let getSidebaLinks=document.querySelectorAll(".nav-sidebar a ");
+// ..........................Javascript for Slide share.............
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    if( navStatus===false)
-    {
-        getSidebarUl.style.visibility="visibile";
-        getSidebar.style.width ="272px";
-        getSidebarTitle.style.opacity="0.5";
-    
-        let arrayLength=getSidebaLinks.length;
-        for(var i=0; i<array.length; i++)
-        {
-            getSidebaLinks[i].style.opacity="1";
-        }
-        navStatus=true;
-        
-    }}
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+//...........................................................................
