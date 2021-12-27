@@ -54,7 +54,28 @@
                 background-clip: border-box;
                 padding: 50px;
             }
-            
+            #myDiv {
+                transform: rotateZ(-45deg);
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                border: 1px solid black;
+
+                }
+            #myDiva {
+                transform: rotateX(150deg);
+                width: 100px;
+                height: 10px;
+                background-color: black;
+                border: 1px solid black;
+                }
+            #Diva {
+                transform: rotateY(150deg);
+                width: 100px;
+                height: 10px;
+                background-color: black;
+                border: 1px solid black;
+                }
 
 
    </style>
@@ -75,6 +96,8 @@ function myFunction() {
 document.getElementById("demo").innerHTML = " Storytelling is timeless; an activity that has been taking place for hundreds & thousands of years. Stories are an integral part of human history & culture with written & verbal tales passed down from generation to generation. A photograph will capture & freeze a moment in time whilst conveying an emotion, expressing a mood, sharing an idea & telling a narrative. All key elements of storytelling.";
 }
 </script>
+
+<!----------------------Perdorimi i te gjitha llojeve te listave------------------------>
     <h3 >THINGS TO CONSIDER WHEN PLANNING YOUR PHOTO STORY:</h3><br>
 
           <ul>
@@ -108,13 +131,19 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
               <li>A happy client</li>
            </ul>
           </ol><br><br>
+
+          <!--------- -Insertimi i audio files----------------->
           <div class="audio">
             <p> Inspirational quotes about Photography</p>
             <audio controls muted> <source src="./videos/b.mp3" type="audio/mpeg"></audio> 
-            
+            <div id="myDiva">
+            </div>
             <audio controls muted> <source src="./videos/b1.mp3" type="audio/mpeg"></audio>
-        
+            <div id="Diva">
+            </div>
         </div>
+
+
              <h3>THEMES</h3><br>
           <p>To keep your story interesting, you should aim for variety in your images. However, you also want visual consistency to create 
              a cohesive story. 
@@ -128,6 +157,10 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
            <dd>of or concerning style, especially literary style. </dd>
          </dl>
           <br><br>
+
+          
+            <div id="myDiv">
+            </div>
 
           <div id="story">
 
