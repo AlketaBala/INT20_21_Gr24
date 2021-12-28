@@ -49,11 +49,29 @@
 
             </table>
 
-        <p><strong>Gender</strong></p>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label><br>
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label><br><br>
+            <br>
+            <select id="select">
+                <option value="Default">Gender</option>
+            </select>
+        </br>
+    <br>
+    <input id="myInput" type="text">
+
+    <button onclick="myFunction()">Type your motherland to know if you can work remote</button>
+    
+    <p id="country"></p>
+    
+    
+    
+    </body>
+
+
+
+
+
+
+    </br>
+
         <label for="country"><strong>Select your country:</strong></label>
         <br><br>
         <input type="text" list="country" name="country">
@@ -100,6 +118,61 @@
 
 
     </form>
+        <!----------------------------------Using Arrays to create a Select Gender Drop Down menu ------------------->
+
+    <script>
+            
+        var select = document.getElementById("select"),
+                 arr = ["Female","Male"];
+         
+         for(var i = 0; i < arr.length; i++)
+         {
+             var option = document.createElement("OPTION"),
+                 txt = document.createTextNode(arr[i]);
+             option.appendChild(txt);
+             option.setAttribute("value",arr[i]);
+             select.insertBefore(option,select.lastChild);
+         }
+         
+    </script>
+         <!------------------------------------------------------------------------------------------------------------->
+         
+         <script>
+            function myFunction() {
+              var text;
+              var country = document.getElementById("myInput").value;
+            
+              switch(country) {
+                case "Albania":
+                  text = " You can work remote";
+                break;
+                case "Kosovo":
+                  text = " You can work remote";
+                break;
+                case "America":
+                text = " You can work remote only on sundays";
+                break;
+                case "Germany":
+                text = "You can work remote only on Fridays";
+                break;
+                case "Spain":
+                text = "You can work remote only on weekend";
+                break;
+                case "Russia":
+                text = "Sorry, you can't work remote";
+                break;
+                case "China":
+                text = "Sorry you can't work remote";
+                break;
+                case "Denmark":
+                text = "You can work remote only on Fridays";
+                break;
+                default:
+                text = "Sorry we operate all over the world but the working remote is limited";
+              }
+              document.getElementById("country").innerHTML = text;
+            }
+            </script>
 
 </body>
 </html>
