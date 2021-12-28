@@ -48,12 +48,15 @@
 
 
             </table>
+            <!-------------------------------------------------------------- ------------------------------------------------>
 
-        <p><strong>Gender</strong></p>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label><br>
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label><br><br>
+            <br>
+            <select id="select">
+                <option value="Default">Gender</option>
+            </select>
+        </br>
+    
+
         <label for="country"><strong>Select your country:</strong></label>
         <br><br>
         <input type="text" list="country" name="country">
@@ -100,6 +103,25 @@
 
 
     </form>
+        <!----------------------------------Using Arrays to create a Select Gender Drop Down menu ------------------->
+
+    <script>
+            
+        var select = document.getElementById("select"),
+                 arr = ["Female","Male"];
+         
+         for(var i = 0; i < arr.length; i++)
+         {
+             var option = document.createElement("OPTION"),
+                 txt = document.createTextNode(arr[i]);
+             option.appendChild(txt);
+             option.setAttribute("value",arr[i]);
+             select.insertBefore(option,select.lastChild);
+         }
+         
+    </script>
+         <!------------------------------------------------------------------------------------------------------------->
+
 
 </body>
 </html>
