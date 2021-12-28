@@ -48,14 +48,29 @@
 
 
             </table>
-            <!-------------------------------------------------------------- ------------------------------------------------>
 
             <br>
             <select id="select">
                 <option value="Default">Gender</option>
             </select>
         </br>
+    <br>
+    <input id="myInput" type="text">
+
+    <button onclick="myFunction()">Type your motherland to know if you can work remote</button>
     
+    <p id="country"></p>
+    
+    
+    
+    </body>
+
+
+
+
+
+
+    </br>
 
         <label for="country"><strong>Select your country:</strong></label>
         <br><br>
@@ -121,7 +136,43 @@
          
     </script>
          <!------------------------------------------------------------------------------------------------------------->
-
+         
+         <script>
+            function myFunction() {
+              var text;
+              var country = document.getElementById("myInput").value;
+            
+              switch(country) {
+                case "Albania":
+                  text = " You can work remote";
+                break;
+                case "Kosovo":
+                  text = " You can work remote";
+                break;
+                case "America":
+                text = " You can work remote only on sundays";
+                break;
+                case "Germany":
+                text = "You can work remote only on Fridays";
+                break;
+                case "Spain":
+                text = "You can work remote only on weekend";
+                break;
+                case "Russia":
+                text = "Sorry, you can't work remote";
+                break;
+                case "China":
+                text = "Sorry you can't work remote";
+                break;
+                case "Denmark":
+                text = "You can work remote only on Fridays";
+                break;
+                default:
+                text = "Sorry we operate all over the world but the working remote is limited";
+              }
+              document.getElementById("country").innerHTML = text;
+            }
+            </script>
 
 </body>
 </html>
