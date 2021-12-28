@@ -6,10 +6,11 @@
 }
 
 nav{
-    background:black;
+    background:rgb(0, 0, 0);
     width:100%;
     padding:10px 0;
     padding:10px 0;
+
 }
 
 nav .menu{
@@ -20,15 +21,20 @@ nav .menu{
     justify-content: space-between;
     padding: 0 20px;
     position: sticky;
+    
+
 }
 
 .menu .logo a{
         text-decoration: none;
-        color: #fff;
+        color: rgb(255, 255, 255);
         font-size: 35px;
         font-weight: 600;
 }
-
+.menu.logo
+{
+    display: inline;
+}
 .menu ul{
     display: inline-flex;
 }
@@ -36,11 +42,13 @@ nav .menu{
 .menu ul li {
     list-style: none;
     margin-left:7px;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
     background:black;
@@ -48,14 +56,16 @@ nav .menu{
     
 }
 
-.img{
-    background-image: url(./Photos/background-1.jpeg);
-    height:100%;
+.menu ul li a:hover{
+    background: #fff;
+    color: #333;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+}
+
+.img{
+    margin-bottom: -21px;
+   
 }
 
 .center{
@@ -64,6 +74,8 @@ nav .menu{
     width:100%;
     padding:0 20px;
     text-align: center;
+    margin-top: -200px;
+
 }
 
 .center .title{
@@ -99,20 +111,109 @@ nav .menu{
 
     background:none;
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #ffffff;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .mysidenav
+    {
+        display: inline;
+        background-color:white;
+    }
+
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
 #Footer
 {
-    background-color: rgb(10, 6, 6);
+    background:rgb(0, 0, 0);
     margin: 2px 2px ;
-    padding-top: 50px;
+    padding: 40px 0;
     padding-left: 10px;
     
 }
 #Footer ul li a
 {
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 0.8;
+}
+.list{
+    text-align: center;
+}
+#Footer ul li a:hover{
+    opacity: 1;
 
-    margin: 2 2;
-    padding: 0 40;
+}
+#Footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+#Footer .social{
+text-align: center;
+padding-bottom: 25px;
+color: #4b4c4d;
 }
 
- 
+#Footer .social a{
+    font-size: 25px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.3;
+}
+#Footer .social a:hover{
+    opacity: 1;
+
+}
+#Footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: none;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+#Footer .copyright{
+    margin-top:35px;
+    text-align: center;
+    font-size: 15px;
+    color: #aaa;
+}

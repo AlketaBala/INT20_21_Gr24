@@ -3,17 +3,11 @@
     <head>
         <title>About us</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <style>
-          a{
-            font-size: 18px;
-            text-decoration: none;
-            color:red;
-            padding:10px;
-            margin-top: 20px;
-
-          }
-
+         
           button {
 		        padding: 0.1em;
 		        width: 10em;
@@ -71,18 +65,22 @@
             margin-right:50px;
             background-color: #202020
           }
-          .shkelqimi img {
-            opacity: 0.3;
-          }
-
-          .shkelqimi img:hover {
-            opacity: 1;
-          }
-      
+          
+          
+          
         </style>
     </head>
     <body>
         <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="tips.html">Photography Tips</a>
+            <a href="aboutus.html">About us</a>
+            <a href="Sign-up.html">Sign Up</a>
+            <a href="application.html">Application Form </a>
+        </div>
+        
+        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
             <div class="menu">
                 <div class="logo">
                     <a href="./index.html">ALERDO</a>
@@ -93,6 +91,7 @@
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./feedback.html">Feedback</a></li>
+                    
                 </ul>
             </div>
         </nav>
@@ -125,10 +124,35 @@
               </aside>
               
           </div>
-              
+<!---------------------------------------------------------Vendosja e entiteteve në box model----------------------------------------->
+<div style="
+  background-color: lightgrey;
+  width: 300px;
+  border: 5px double red;
+  padding: 50px;
+  margin: 50px;
+  outline: 5px solid black;
+  outline-offset: 15px;
+  transform: scale(1,1);"
+  >
+  
+  
+  <div>Mund t&euml; shp&euml;tojm&euml; e t&euml; p&euml;rparojm&euml; duke vepruar s&euml; bashku, jo ve&ccedil;mas.
+    BASHK&Euml;PUNIMI &Euml;SHT&Euml; &Ccedil;EL&Euml;SI I SUKSESIT.
+    <br>&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;</div>
+                
+  </div>
+
+  
+  
+
+
            <br><br><br>
-            <p style="color:black; margin-top: 20em; margin-bottom:10em; margin-left: 30em;"><b>You can read more about us and our love for photography.</b></p>
+            <div style="transform: skewX(5deg); color:black; margin-top: 20em; margin-bottom:10em; margin-left: 30em;"><b>You can read more about us and our love for photography.</b></div>
             <br><br><br>
+
+
+            
             
 
             <center>
@@ -219,6 +243,7 @@
                             
             
                     <center>
+                      
 <!-------------------------------------------------------------- Ifram-Tabela shumekoloneshe ------------------------------------------------>
 <iframe src="HistorikuiAlerdos.html"
 height="650" 
@@ -237,23 +262,71 @@ allowfullscreen=""
 loading="lazy">
 </iframe>
 </center>  
-<h2 style="text-align: right;"> Want to know more?</h2>
 
-<address style="text-align: right;"><a href="mailto:alerdostudio@gmail.com" title="Learn more about us"> <b>Email Us</b</a></address>
 
-   <!-------------------------------------------------------------- Foter ------------------------------------------------>
-
-  <div id="Footer" style="text-align: center;">
   
-    <div class="shkelqimi img">
-     <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><img src="f.png"></a>
-     <a href="https://www.instagram.com/alerdophotography/"><img src="i.png"></a>
-     <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><img src="g.png"></a>        
-     <a href="./contact.html"><img src="m.png"></a> 
-    </div>
-  <br>
-  <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
-  </div>
+<!----------------------------------------------Përdorimi i JavaScript për  ngjarje (event)---------------------------------------->
+   
+   <button style="background-color:lightgray; width:60px;height:60px; float:left;" onclick="displayDate()">The time is?</button>
+
+   <script>
+   function displayDate() {
+     document.getElementById("demo").innerHTML = Date();
+   }
+   </script>
+   
+   <p id="demo" style="float: left;"></p>
+
+   <br>
+   <br>
+   <br>
+   <br>
+  
+ <!-------------------------------------------------------------- Foter ------------------------------------------------>
+    <div id="Footer">
+      <div class="social">
+    
+            <a href="https://www.instagram.com/alerdophotography/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/JoeMcNallyPhoto"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><i class="fab fa-github"></i></a>
+                
+      </div>
+      <ul class="list">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="Sign-up.html">Sign Up</a>
+        </li>
+        <li>
+          <a href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Alerdo @2021
+      </p>
+
+ 
+
+</div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

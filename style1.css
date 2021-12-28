@@ -1,28 +1,181 @@
 body{
-    background-color: black;
+    background-color: gray;
     font-family: sans-serif;
+}
+.container{
+    text-align: center;
+}
+input{
+    display: none;
 }
 
 h1{
 text-align: center;
+font-style: normal;
 color: rgb(228, 235, 235);
-margin: 30px 0 50px;
+margin: 40px 0;
+position: relative;
+text-shadow: 4px 4px #0c0a0a;
+
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(88, 4, 4);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+label{
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 0 50px;
+    font-size: 18px;
+    color: white;
+    object-fit: contain;
+    cursor: pointer;
+    transition: color .5s;
+
+}
+label:first-child{
+    height: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(26, 24, 19);
+    background-color: rgb(234, 229, 238);
+}
+
+label:hover{
+    color: rgb(121, 11, 11);
+}
+label:first-child:hover{
+    color: rgb(121, 11, 11);
 }
 .gallery{
-    
-    margin: 20px 20px ;
-    
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.pic{
+    position: relative;
+    height: 600px;
+    border-radius:10px ;
+    box-shadow: 2px 2px 4px lightgray;
+    cursor: pointer;
+    transition: .5s;
 }
 .gallery img{
-    width: 30%;
-    padding: 6px;
+    width: 100%;
     height: 600px;
     object-fit: contain;
+    border-radius: 10px;
     opacity: 0.8;
-    
+
 
 }
 img:hover{
     opacity: 1;
+}
+#check0:checked  ~ .container .gallery .pic{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
 
 }
+#check1:checked  ~ .container .gallery .nature{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+
+}
+#check1:checked  ~ .container .gallery .art,
+#check1:checked  ~ .container .gallery .place,
+#check1:checked  ~ .container .gallery .video{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+
+#check2:checked  ~ .container .gallery .art{
+    
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked  ~ .container .gallery .place,
+#check2:checked  ~ .container .gallery .video,
+#check2:checked  ~ .container .gallery .nature{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check3:checked  ~ .container .gallery .place{
+    
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+
+}
+#check3:checked  ~ .container .gallery .nature,
+#check3:checked  ~ .container .gallery .art,
+#check3:checked  ~ .container .gallery .video{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+
+}
+
+
+#check4:checked  ~ .container .gallery .video{
+
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+   
+}
+#check4:checked  ~ .container .gallery .nature,
+#check4:checked  ~ .container .gallery .art,
+#check4:checked  ~ .container .gallery .place{
+    
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+

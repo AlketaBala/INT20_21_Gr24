@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Gallery</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="tips.html">Photography Tips</a>
+        <a href="aboutus.html">About us</a>
+        <a href="Sign-up.html">Sign Up</a>
+        <a href="application.html">Application Form </a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
         <div class="menu">
             <div class="logo">
                 <a href="./index.html">ALERDO</a>
@@ -21,101 +33,252 @@
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./feedback.html">Feedback</a></li>
                 
+                
             </ul>
         </div>
     </nav>
+    <input type="radio" name="Photos" id="check0" checked>
+    <input type="radio" name="Photos" id="check1" >
+    <input type="radio" name="Photos" id="check2" >
+    <input type="radio" name="Photos" id="check3" >
+    <input type="radio" name="Photos" id="check4" >
 
-    <h1>OUR PHOTO GALLERY</h1>
+    <div class="container">
+    <h1>OUR GALLERY</h1>
 
+    <div class="top-content">
+        <label for="check0">All</label>
+        <label for="check1">Nature</label>
+        <label for="check2">Artistic</label>
+        <label for="check3">Places</label>
+        <label for="check4">Videos</label>
+    </div>
     <div class="gallery">
-        <a href="images/16.jpg" target="_blank"> <!--Hyperlink qe hapet ne nje tab te ri-->
-        <img src="images/16.jpg" alt="Nature">
-        </a>
-        <a href="images/12.jpg" target="_blank">
-        <img src="images/12.jpg" alt="A beautiful place">
-        </a>
-        <a href="images/11.jpg" target="_blank">
-        <img src="images/11.jpg" alt="Autumn">
-        </a>
-        <a href="images/15.jpg" target="_blank">
-        <img src="images/15.jpg" alt="A long road">
-        </a>
-        <a href="images/01.jpg" target="_blank">
-        <img src="images/01.jpg" alt="Nature in winter">
-        </a>
-        <a href="images/02.jpg" target="_blank"> 
-        <img src="images/02.jpg" alt="Covered in blue">
-        </a>
-        <a href="images/04.jpg" target="_blank">
-        <img src="images/04.jpg" alt="Symetric" >
-        </a>
-        <a href="images/03.jpg" target="_blank">
-        <img src="images/03.jpg" alt="Lady walking down the street">
-        </a>
-        <a href="images/05.jpg" target="_blank">
-        <img src="images/05.jpg" alt="Feeling free">
-        </a>
-        <a href="images/07.jpg" target="_blank">
-        <img src="images/07.jpg" alt="Fog">
-        </a>
-        <a href="images/08.jpg" target="_blank">
-        <img src="images/08.jpg" alt="Peaceful" >
-        </a>
-        <a href="images/10.jpg" target="_blank">
-        <img src="images/10.jpg" alt="Library">
-        </a>
-        <a href="images/20.jpg" target="_blank">
-        <img src="images/20.jpg" alt="A long way forward">
-        </a>
-        <a href="images/42.jpg" target="_blank">
-        <img src="images/42.jpg" alt="Beautiful sky">
-        </a>
-        <a href="images/41.jpg" target="_blank">
-        <img src="images/41.jpg" alt="Artistic photoshooting">
-        </a>
-        <a href="images/43.jpg" target="_blank">
-        <img src="images/43.jpg" alt="Under the yellow sun"> 
-        </a>
-        <a href="images/19.jpg" target="_blank">
-        <img src="images/19.jpg" alt="A long way forward">
-        </a>
-        <a href="images/13.jpg" target="_blank">
-        <img src="images/13.jpg" alt="Go green">
-        </a>
-        <a href="images/44.jpg" target="_blank">
-        <img src="images/44.jpg" alt="The leaves are falling">
-        </a>
-        <a href="images/45.jpg" target="_blank">
-        <img src="images/45.jpg" alt="Free time">
-        </a>
-        <a href="images/46.jpg" title="Break the Cycle"> <!--Hyperlink qe hapet brenda HTML faqes-->
-        <img src="images/46.jpg" alt="Break the cycle">
-        </a>
-        <a href="images/51.jpg" target="_blank">
-        <img src="images/51.jpg" alt="A beautiful sunset">
-        </a>
-        <a href="images/52.jpg" target="_blank">
-        <img src="images/44.jpg" alt="Beautiful Albania">
-        </a>
-        <a href="images/52.jpg" target="_blank">
-        <img src="images/52.jpg" alt="Netherlands">
+
+        <div class="pic nature">
+          <a href="images/01.jpg" target="_blank"> <!--Hyperlink qe hapet ne nje tab te ri-->
+          <img src="images/01.jpg" alt="Nature in winter">
+          </a>
+        </div>
+
+        <div class="pic art">
+           <a href="images/03.jpg" target="_blank">
+           <img src="images/03.jpg" alt="Lady walking down the street">
+           </a>
+        </div>
+        <div class="pic place">
+           <a href="images/04.jpg" target="_blank">
+           <img src="images/04.jpg" alt="Symetric">
+           </a>
+        </div>
+        <div class=" pic video">  
+           
+           <video src="./videos/a.mp4" type="video/mp4" height="600px" width="100%" controls muted loop></video>
+          
+        </div>
+        <div class="pic nature">  
+           <a href="images/02.jpg" target="_blank">
+           <img src="images/02.jpg" alt="Covered in blue">
+           </a>
+        </div>
+        <div class="pic art">
+          <a href="images/05.jpg" target="_blank"> 
+          <img src="images/05.jpg" alt="Feeling free">
+          </a>
+        </div>
+        <div class="pic place">
+          <a href="images/08.jpg" target="_blank">
+          <img src="images/08.jpg" alt="Peaceful" >
+          </a>
+        </div>
+        <div class="pic video"> 
+          <video src="./videos/a1.mp4" type="video/mp4" height="600px" width="100%" controls muted loop></video>
+        </div>
+        <div class="pic nature">   
+          <a href="images/06.jpg" target="_blank">
+          <img src="images/06.jpg" alt="Green">
+          </a>
+        </div>
+        <div class="pic nature">   
+          <a href="images/07.jpg" target="_blank">
+          <img src="images/07.jpg" alt="Fog">
+          </a>
+        </div>
+        <div class="pic art">
+          <a href="images/14.jpg" target="_blank">
+          <img src="images/14.jpg" alt="Hometown">
+          </a>
+        </div>
+        <div class="pic place">
+          <a href="images/09.jpg" target="_blank">
+          <img src="images/09.jpg" alt="Prishtina in winter" >
+          </a>
+        </div>
+        <div class="pic video"> 
+          <video src="./videos/a2.mp4" type="video/mp4" height="600px" width="100%" controls muted loop></video>
+        </div>
+        <div class="pic nature">   
+          <a href="images/11.jpg" target="_blank">
+          <img src="images/11.jpg" alt="Autumn">
+          </a>
+        </div>
+        <div class="pic art">
+          <a href="images/16.jpg" target="_blank">
+          <img src="images/16.jpg" alt="Nature">
+          </a>
+        </div>
+        <div class="pic video"> 
+          <video src="./videos/a3.mp4" type="video/mp4" height="600px" width="100%" controls muted loop></video>
+        </div>
+        <div class="pic nature">   
+          <a href="images/12.jpg" target="_blank">
+          <img src="images/12.jpg" alt="A beautiful place">
+          </a>
+        </div>
+        <div class="pic nature">
+          <a href="images/13.jpg" target="_blank">
+          <img src="images/13.jpg" alt="Go green">
+          </a>
+        </div>
+        <div class="pic art">
+          <a href="images/18.jpg" target="_blank">
+          <img src="images/18.jpg" alt="Beautiful sky">
+          </a>
+        </div>
+        <div class="pic place">
+          <a href="images/10.jpg" target="_blank">
+          <img src="images/10.jpg" alt="Library">
+          </a>
+        </div>
+        <div class="pic video"> 
+          <video src="./videos/a4.mp4" type="video/mp4" height="600px" width="100%" poster="./images/54.png" controls muted loop></video>
+        </div>
+        <div class="pic nature">   
+          <a href="images/15.jpg" target="Break the Cycle"> <!--Hyperlink qe hapet brenda HTML faqes-->
+          <img src="images/15.jpg" alt="A long road">
+          </a>
+        </div>
+        <div class="pic art">
+          <a href="images/40.jpg" target="_blank">
+          <img src="images/40.jpg" alt="Black and white">
+          </a>
+        </div>
+        <div class="pic place">
+          <a href="images/17.jpg" target="_blank">
+          <img src="images/17.jpg" alt="Snow">
+          </a>
+        </div>
+        <div class="pic video"> 
+          <video src="./videos/a5.mp4" type="video/mp4" height="600px" width="100%" controls muted loop></video></div>
+        <div class="pic nature">   
+            <a href="images/19.jpg" target="_blank"> 
+            <img src="images/19.jpg" alt="A long way forward">
+            </a>
+          </div>
+        <div class="pic nature">   
+            <a href="images/42.jpg" target="_blank"> 
+            <img src="images/42.jpg" alt="Break the cycle">
+            </a>
+          </div>  
+        <div class="pic art">   
+            <a href="images/41.jpg" target="_blank"> 
+            <img src="images/41.jpg" alt="Artistic photoshooting">
+            </a>
+          </div>
+        <div class="pic place">   
+            <a href="images/20.jpg" target="_blank"> 
+            <img src="images/20.jpg" alt="A long way forward">
+            </a>
+          </div>
+        <div class="pic video"> 
+            <video src="./videos/a6.mp4" type="video/mp4" height="600px" width="100%" controls muted></video>
+          </div>
+          <div class="pic nature">   
+            <a href="images/43.jpg" target="_blank"> 
+            <img src="images/43.jpg" alt="Under the yellow sun">
+            </a>
+        </div>
+        <div class="pic nature">   
+            <a href="images/44.jpg" target="_blank">
+            <img src="images/44.jpg" alt="The leaves are falling">
+            </a>
+          
+        </div>
+          <div class="pic art">   
+            <a href="images/46.jpg" title="_blank"> <!--Hyperlink qe hapet brenda HTML faqes-->
+            <img src="images/46.jpg" alt="Break the cycle">
+            </a>
+          </div>
+          <div class="pic place">   
+            <a href="images/52.jpg" target="_blank"> 
+            <img src="images/52.jpg" alt="Beautiful Albania">
+            </a>
+            
+          </div>
+          <div class="pic nature">   
+            <a href="images/45.jpg" target="_blank"> 
+            <img src="images/45.jpg" alt="Free time">
+            </a>
+          </div>
+          
+          <div class="pic place">   
+            <a href="images/53.jpg" target="_blank"> 
+            <img src="images/53.jpg" alt="The Netherlands">
+            </a>
+          </div>
+          <div class="pic nature">   
+            <a href="images/51.jpg" target="_blank"> 
+            <img src="images/51.jpg" alt="A beautiful sunset">
+            </a>
+          
+          </div>    
+
+    </div>
 
     </div>
     <div id="Footer">
+      <div class="social">
     
-            <ul>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://www.instagram.com/alerdophotography/">Instagram</a>
-                <li><a href="https://www.facebook.com/Alerdo-Photography-100473962483971">Facebook</a></li>
-                <li><a href="./feedback.html">  Please give use a feedback</a></li>
-
+            <a href="https://www.instagram.com/alerdophotography/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/JoeMcNallyPhoto"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><i class="fab fa-github"></i></a>
                 
-            </ul> 
+      </div>
+      <ul class="list">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="Sign-up.html">Sign Up</a>
+        </li>
+        <li>
+          <a href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Alerdo @2021
+      </p>
 
  
-    <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
-     
-    <p style="color: white;text-align: center;"> ALERDO was created by three passionate photographers.For more informations visit <a href="aboutus.html"><mark> our profiles </mark></a>
+
 </div>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+<script src="js/main.js"></script>
 </body>
 </html>
