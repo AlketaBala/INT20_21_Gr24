@@ -1,94 +1,211 @@
-<html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
-        
-
-      <style>
-   
-            h2 p{
-            display:block;
+      <title>Alerdo Photography | Welcome</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="slideshare.css">
+    <style>
+        #Ourvisitor
+        {
+            background-image: url(./Photos/dark.jpg); border-color: white;
+            color:rgb(255, 255, 255);
+            margin: 2 2;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #Ourvisitor h4
+        {
+         text-align: center;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
             }
 
-            .Lists{
-            padding: 30px
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
             }
 
-       </style>
-            
-    </head>
-               
+            .sidenav a:hover {
+                color: #ffffff;
+            }
 
-    <body>
-        <nav>
-          <div id="mySidenav" class="sidenav">
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            .mysidenav
+            {
+                display: inline;
+                background-color:white;
+            }
+
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
+
+        <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="tips.html">Photography Tips</a>
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="application.html">Application Form </a>
+            <a href="aboutus.html">About us</a>
+            <a href="Sign-up.html">Sign Up</a>
+            <a href="application.html">Application Form </form></a>
         </div>
         
-        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
-            <div class="menu">
-                <div class="logo">
-                    <h1 title="Created by Erza,Alketa,Doruntina"><a href="./index.html">ALERDO</a></h1>
-                </div>
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./aboutus.html">About us</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./feedback.html">Feedback</a></li>
-                    <form class="search-form">
-                      <input type="text" placeholder="Search">
-                      <i class="fa fa-search" style="color:rgb(250, 250, 250); border-radius: 50px;"></i></form>
-                </ul>
+        <div class="menu">
+            <div class="logo">
+                <h1 title="Created by Erza,Alketa,Doruntina"><a href="./index.html">ALERDO</a></h1>
             </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <form class="search-form">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search" style="color:rgb(250, 250, 250); border-radius: 50px;"></i>
+            </ul>
+                      
+        </div>
         </nav>
 
-            <div class="img"></div>
-            <div class="center">
-                <div class="title"> Welcome to ALERDO </div>
-                <div class="subtitle">  <q title="This is a quote"style ="color:white; "> <strong> <i> Life is like a camera.Just focus on what's important and capture the good times,develop from the negatives and if things dont'work out, just
-                <del> give up </del> <b>take another shot.</b></i></q> </div></strong>
-                
-                <div class="btns">
-                    <button ><a href="./aboutus.html" style="color: white; text-decoration:none ;">Learn about us</a></button>
-                    <button ><a href="./gallery.html "style="text-decoration:none">Gallery</a></button>
-                </div>
+        <div class="img" >
+            <!-------------------------------------------------------------- Slide Share ------------------------------------------------>
+
+                <div class="slideshow-container">
+                    <div class="center">
+                        <div class="title"> Welcome to ALERDO </div>
+                        <div class="subtitle">  <q title="This is a quote"style ="color:white; "> <strong> <i> Life is like a camera.Just focus on what's important and capture the good times,develop from the negatives and if things dont'work out, just
+                        <del> give up </del> <b>take another shot.</b></i></q> </div></strong>
+                        <div class="btns">
+                <button ><a href="./aboutus.html" style="color: white; text-decoration:none ;">Learn about us</a></button>
+                <button ><a href="./gallery.html "style="text-decoration:none">Gallery</a></button>
             </div>
+                      </div>
 
-
-            <div id="Footer">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="Photos/background-1.jpeg" style="width:100%">
+                      <div class="text"><q><b>I shoot people for a living </b></q></div>
+                    </div>
                     
-                        <ul>
-                            <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="https://www.instagram.com/alerdophotography/">Instagram</a>
-                            <li><a href="https://www.facebook.com/Alerdo-Photography-100473962483971">Facebook</a></li>
-                            <li><a href="./feedback.html">  Please give use a feedback</a></li>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="Photos/dark.jpg" style="width:100%">
+                      <div class="text"><q><b>Is it not careless to become too local when there are four hundred billion stars in our galaxy alone." </b></q></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="Photos/new york.jpg" style="width:100%">
+                      <div class="text"><q style="color:black"><b>Somewhere between living and dreaming there is New York </b></q></div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center; margin: -16px;">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                
+                </div>
+        </div>
+         <!------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="Ourvisitor">
+            <h1 style="outline-style: outset;
+            border: 3px solid black;
+            outline-style: solid;
+            outline-color: white;
+            outline-width: medium;">To our visitors</h1>
+            <br>
+           <h4>Dear visitors</h4>
+     <pre style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+              First of all a warm welcome to our page.It's our pleasure te meet you and to work with all of you.
+              Our name is <abbr title="Alketa-Erza-Doruntina">ALERDO</abbr> and we operate all over the world.
+              We started working as photographers since we were in heigh school back in 2019.<strong>
+              Our journey was difficult and we were rejected a lot of times from companies, but we never gave up. </strong>
+              Now we have contracts with the best photography companies so don't be scared of our work.
+
+
+    <u>With lots of Love-<span style="color:rgb(255, 251, 0)">ALERDO</span></u>
+
+     </pre>
+        </div>
+            <div id="Footer">
+                
+                    <ul>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="https://www.instagram.com/alerdophotography/">Instagram</a>
+                        <li><a href="https://www.facebook.com/Alerdo-Photography-100473962483971">Facebook</a></li>
+                        <li><a href="./feedback.html">  Please give use a feedback</a></li>
+    
+                        
+                     </ul> 
+
+                <h4 style="text-align: right; color: antiquewhite; padding-right: 50px; ">Email Field</h4><br>
+
+
+
+            <form action="" style="text-align: right; padding-right: 50px;">
+               <label for="email">Enter your email:</label>
+               <input type="email" id="email" name="email">
+               <input type="submit" value="Submit">
+            </form>
         
-                            
-                         </ul> 
-            
+         
+            <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
              
-                <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
-                 
-                <p style="color: white;text-align: center;"> ALERDO was created by three passionate photographers.For more informations visit <a href="aboutus.html"><mark> our profiles </mark></a>
-            </div>
+            <p style="color: white;text-align: center;"> ALERDO was created by three passionate photographers.For more informations visit <a href="aboutus.html"><mark> our profiles </mark></a>
+        </div>
+<!-------------------------------------------------------------- Java Script in body ------------------------------------------------>
 
-              
-            <script>
-              function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-  
-              }
-              
-              function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-              }
-            </script>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
 
-    </body>
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+         <script src="js/main.js"></script>
+
+</body>
 </html>
+
