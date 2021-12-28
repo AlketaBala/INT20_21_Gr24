@@ -4,17 +4,10 @@
         <title>About us</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <style>
-          a{
-            font-size: 18px;
-            text-decoration: none;
-            color:red;
-            padding:10px;
-            margin-top: 20px;
-
-          }
-
+         
           button {
 		        padding: 0.1em;
 		        width: 10em;
@@ -72,13 +65,7 @@
             margin-right:50px;
             background-color: #202020
           }
-          .shkelqimi img {
-            opacity: 0.3;
-          }
-
-          .shkelqimi img:hover {
-            opacity: 1;
-          }
+          
           
           
         </style>
@@ -104,9 +91,7 @@
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./feedback.html">Feedback</a></li>
-                    <form class="search-form">
-                      <input type="text" placeholder="Search">
-                      <i class="fa fa-search" style="color:rgb(250, 250, 250); border-radius: 50px;"></i></form>
+                    
                 </ul>
             </div>
         </nav>
@@ -279,7 +264,7 @@ loading="lazy">
 </center>  
 
 
-   <!-------------------------------------------------------------- Foter ------------------------------------------------>
+  
 <!----------------------------------------------Përdorimi i JavaScript për  ngjarje (event)---------------------------------------->
    
    <button style="background-color:lightgray; width:60px;height:60px; float:left;" onclick="displayDate()">The time is?</button>
@@ -293,22 +278,42 @@ loading="lazy">
    <p id="demo" style="float: left;"></p>
 
    <h2 style="text-align: right;"> Want to know more?</h2>
-   <address style="text-align: right;"><a href="mailto:alerdostudio@gmail.com" title="Learn more about us"> <b>Email Us</b</a></address>
+   <address style="text-align: right;"><a href="mailto:alerdostudio@gmail.com" title="Learn more about us"> <b>Email Us</b</a></address><br>
   
+ <!-------------------------------------------------------------- Foter ------------------------------------------------>
+    <div id="Footer">
+      <div class="social">
+    
+            <a href="https://www.instagram.com/alerdophotography/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><i class="fab fa-github"></i></a>
+                
+      </div>
+      <ul class="list">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="Sign-up.html">Sign Up</a>
+        </li>
+        <li>
+          <a href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Alerdo @2021
+      </p>
 
-  <div id="Footer" style="text-align: center;">
-  
-    <div class="shkelqimi img">
-     <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><img src="f.png"></a>
-     <a href="https://www.instagram.com/alerdophotography/"><img src="i.png"></a>
-     <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><img src="g.png"></a>        
-     <a href="./contact.html"><img src="m.png"></a> 
-    </div>
-  <br>
+ 
 
-  <h3 style="text-align: center;color: white;"> Alerdo 2021</h3>
-  </div>
-  
+</div>
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
@@ -319,6 +324,7 @@ loading="lazy">
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
