@@ -24,6 +24,10 @@ nav .menu{
     
 
 }
+.logo  a{
+    font-family: 'Imperial Script', cursive;
+   
+  }
 
 .menu .logo a{
         text-decoration: none;
@@ -144,11 +148,7 @@ nav .menu{
         font-size: 36px;
         margin-left: 50px;
     }
-    .mysidenav
-    {
-        display: inline;
-        background-color:white;
-    }
+ 
 
 
     @media screen and (max-height: 450px) {
