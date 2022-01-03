@@ -17,10 +17,16 @@
             text-align: center;
         }
     </style>
+    <script>
+        function myFunction1() {
+          alert("The application is valid only if you are over 20 years old!");
+        }
+        </script>
+        
 </head>
 
 </head>
-<body>
+<body  onload="myFunction1()">
     <h1><b>Be a part of ALERDO team</b></h1>
     <form action="" autocomplete="on">
         <fieldset>
@@ -64,9 +70,6 @@
     
     <p id="country"></p>
     
-    
-    
-    </body>
 
 
 
@@ -75,11 +78,11 @@
 
     </br>
 
-        <label for="country"><strong>Select your country:</strong></label>
+        <label for="place"><strong>Select your country:</strong></label>
         <br><br>
-        <input type="text" list="country" name="country">
+        <input type="text" list="place" name="place">
 
-        <datalist name="country" id="country">
+        <datalist name="place" id="place">
             <option value="Albania">
             <option value="Australia">
             <option value="Austria">
@@ -94,7 +97,7 @@
 
         </datalist>
 
-        <p><strong>What type of session are you interested in?? </strong></p>
+        <p><strong>What type of session are you interested in? </strong></p>
 
         <input type="checkbox" name="fashion" id="fashion">
         <label for="fashion">Fashion</label><br>
@@ -127,16 +130,17 @@
             
         var select = document.getElementById("select"),
                  arr = ["Female","Male"];
-         
-         for(var i = 0; i < arr.length; i++)
+         var i=0;
+         while(i < arr.length)
          {
              var option = document.createElement("OPTION"),
                  txt = document.createTextNode(arr[i]);
              option.appendChild(txt);
              option.setAttribute("value",arr[i]);
              select.insertBefore(option,select.lastChild);
-         }
-         
+             i++;  
+            }
+                 
     </script>
          <!------------------------------------------------------------------------------------------------------------->
          
@@ -176,6 +180,7 @@
               document.getElementById("country").innerHTML = text;
             }
             </script>
+            
 
 </body>
 </html>
