@@ -25,6 +25,6 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");// Nga dot aktiv kalon ne joaktive
   }
   slides[slideIndex-1].style.display = "block";//Paraqesim foton e pare me display=block
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active"; //Statusi aktiv
 }
 //...........................................................................
