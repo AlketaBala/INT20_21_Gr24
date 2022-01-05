@@ -64,16 +64,16 @@
         </style>
         <script>
           function allowDrop(icon) {
-            icon.preventDefault();
+            icon.preventDefault();// Lejon opeacionin Drop 
           }
           
           function drag(icon) {
-            icon.dataTransfer.setData("text", icon.target.id);
+            icon.dataTransfer.setData("text", icon.target.id);// Specifikon te llojin dhe te dhenen e drag-it
           }
           
           function drop(icon) {
             icon.preventDefault();
-            var data = icon.dataTransfer.getData("text");
+            var data = icon.dataTransfer.getData("text");// I merr te dhenat te drag-it 
             icon.target.appendChild(document.getElementById(data));
           }
           </script>
