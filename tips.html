@@ -4,6 +4,8 @@
 
 <html lang="en">
 <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,6 +94,24 @@
   }
 
    </style>
+   <!---------------Metoda slideToggle() dhe eventi onclick------------------------------->
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        $("#flip").text("IDEAS FOR INTRODUCTORY SHOTS");
+        
+        });
+      });
+      $(document).ready(function(){
+        $("#flip1").click(function(){
+          $("#panel1").slideToggle("slow");
+        $("#flip1").text("IDEAS FOR CONCLUSION SHOTS");
+        
+        });
+      });
+      </script>
+       <!------------------------------------------------------------------------------------>
 </head>
 
   <body>
@@ -132,6 +152,12 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
 
           </ul>
           <br>
+         
+            
+             
+            
+            
+            
 
 
     
@@ -139,20 +165,21 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
 
 
               <ul>
-              <li><u>IDEAS FOR INTRODUCTORY SHOTS</u></li><br>
-            <ul>
+             
+            <div id="flip"> <li><u>IDEAS FOR INTRODUCTORY SHOTS</u></li></div><br>
+            <div id="panel"><ul>
              <li>A wide landscape shot, setting the scene & showing the location of your story.</li>
              <li>A suitcase & train ticket illustrating the start of a journey.  </li>
              </ul>
-            </li><br>
-            <li><u>IDEAS FOR CONCLUSION SHOTS</u></li><br>
-           <ol>
+            </li><br></div>
+            <div id="flip1"> <li><u>IDEAS FOR CONCLUSION SHOTS</u></li></div><br>
+            <div id="panel1"> <ol>
            <li>Sunset at the end of your travels (although this could be considered a cliche shot!)  </li>
            <li>The blowing out of candles on a birthday cake, the end of a year  </li>
            <ul>
               <li>A happy client</li>
            </ul>
-          </ol><br><br>
+          </ol></div><br><br>
 
           <!--------- -Insertimi i audio files----------------->
           <div class="audio">
