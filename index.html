@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Kaushan+Script&family=Pushster&family=The+Nautigal&display=swap" rel="stylesheet">
     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
       <title>Alerdo Photography | Welcome</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="slideshare.css">
+
+
     <style>
- 
+
+
+
+
 
         #Ourvisitor
         {
@@ -28,6 +35,7 @@
        
     </style>
     <script>
+      //...............Javascript for toggel side nav bar......//
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
 
@@ -35,15 +43,18 @@
     
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
+    
     }
+     //...................................................//
   </script>
 </head>
 <body>
     <nav>
-        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>  <!-- >&#9776 represent the button for opening the toogel side nav bar  --->
 
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    <!--&times represent the button (x) to close the toogel side nav bar  --->
+
             <a href="tips.html">Photography Tips</a>
             <a href="aboutus.html">About us</a>
             <a href="Sign-up.html">Sign Up</a>
@@ -69,52 +80,52 @@
         <div class="img" >
             <!-------------------------------------------------------------- Slide Share ------------------------------------------------>
 
-                <div class="slideshow-container">
-                    <div class="center">
-                        <div class="title"> Welcome to ALERDO </div>
-                        <div class="subtitle">  <q title="This is a quote"style ="color:white; "> <strong> <i> Life is like a camera.Just focus on what's important and capture the good times,develop from the negatives and if things dont'work out, just
-                        <del> give up </del> <b>take another shot.</b></i></q> </div></strong>
-                        <div class="btns">
+            <div class="slideshow-container">
+            <div class="center">
+            <div class="title"> Welcome to ALERDO </div>
+            <div class="subtitle">  <q title="This is a quote"style ="color:white; "> <strong> <i> Life is like a camera.Just focus on what's important and capture the good times,develop from the negatives and if things dont'work out, just
+            <del> give up </del> <b>take another shot.</b></i></q> </div></strong>
+            <div class="btns">
                 <button ><a href="./aboutus.html" style="color: white; text-decoration:none ;">Learn about us</a></button>
                 <button ><a href="./gallery.html "style="text-decoration:none">Gallery</a></button>
             </div>
-                      </div>
+             </div>
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="Photos/background-1.jpeg" style="width:100%">
-                      <div class="text"><q><b>I shoot people for a living </b></q></div>
-                    </div>
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Photos/background-1.jpeg" style="width:100%">
+            <div class="text"><q><b>I shoot people for a living </b></q></div>
+             </div>
                     
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="Photos/dark.jpg" style="width:100%">
-                      <div class="text"><q><b>Is it not careless to become too local when there are four hundred billion stars in our galaxy alone." </b></q></div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="Photos/new york.jpg" style="width:100%">
-                      <div class="text"><q style="color:black"><b><figcaption> between living and dreaming there is New York</figcaption> </b></q></div>
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center; margin: -16px;">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
-                    </div>
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Photos/dark.jpg" style="width:100%">
+            <div class="text"><q><b>Is it not careless to become too local when there are four hundred billion stars in our galaxy alone." </b></q></div>
+            </div>
                 
-                </div>
-        </div>
+             <div class="mySlides fade">
+             <div class="numbertext">3 / 3</div>
+             <img src="Photos/new york.jpg" style="width:100%">
+             <div class="text"><q style="color:black"><b><figcaption> between living and dreaming there is New York</figcaption> </b></q></div>
+            </div>
+                    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+           </div>
+            <br>
+                    
+           <div style="text-align:center; margin: -16px;">
+           <span class="dot" onclick="currentSlide(1)"></span> 
+           <span class="dot" onclick="currentSlide(2)"></span> 
+           <span class="dot" onclick="currentSlide(3)"></span> 
+           </div>
+                
+          </div>
+          </div>
          <!------------------------------------------------------------------------------------------------------------------------------->
 
-        <div id="Ourvisitor">
+           <div id="Ourvisitor">
             <h1 style="outline-style: outset;
             border: 3px solid black;
             outline-style: solid;
@@ -122,7 +133,7 @@
             outline-width: medium;">To our visitors</h1>
             <br>
            <h4>Dear visitors</h4>
-     <pre style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+           <pre style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
               First of all a warm welcome to our page.It's our pleasure te meet you and to work with all of you.
               Our name is <abbr title="Alketa-Erza-Doruntina">ALERDO</abbr> and we operate all over the world.
               We started working as photographers since we were in heigh school back in 2019.<strong>
@@ -130,11 +141,11 @@
               Now we have contracts with the best photography companies so don't be scared of our work.
 
 
-    <u>With lots of Love-<span style="color:rgb(255, 251, 0)">ALERDO</span></u>
+            <u>With lots of Love-<span style="color:rgb(255, 251, 0)">ALERDO</span></u>
 
-     </pre>
-        </div>
-        <div id="Footer">
+            </pre>
+            </div>
+            <div id="Footer">
             <div class="social">
           
                   <a href="https://www.instagram.com/alerdophotography/"><i class="fab fa-instagram"></i></a>
@@ -142,35 +153,37 @@
                   <a href="https://twitter.com/JoeMcNallyPhoto"><i class="fab fa-twitter"></i></a>
                   <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><i class="fab fa-github"></i></a>
                       
-            </div>
-            <ul class="list">
+             </div>
+              <ul class="list">
               <li>
-                <a href="home.html">Home</a>
+              <a href="home.html">Home</a>
               </li>
               <li>
-                <a href="aboutus.html">About Us</a>
+               <a href="aboutus.html">About Us</a>
+               </li>
+               <li>
+               <a href="contact.html">Contact</a>
+               </li>
+              <li>
+              <a href="Sign-up.html">Sign Up</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+              <a href="feedback.html">Feedback</a>
               </li>
-              <li>
-                <a href="Sign-up.html">Sign Up</a>
-              </li>
-              <li>
-                <a href="feedback.html">Feedback</a>
-              </li>
-            </ul>
-            <p class="copyright">
+              </ul>
+              <p class="copyright">
               Alerdo @2021
-            </p>
+              </p>
       
        
       
-      </div>
-<!-------------------------------------------------------------- Java Script in body ------------------------------------------------>
+             </div>
+<!-------------------------- Java Script in body-EKSTERNAL ------------------------->
 
         
-         <script src="js/main.js"></script>
+              <script src="js/main.js"></script>
+<!---------------------------------------------------------------------------------->
+
 
 </body>
 </html>

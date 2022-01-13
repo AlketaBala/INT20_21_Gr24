@@ -1,8 +1,18 @@
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+   
+
+
+
+
+
     <title>Application Form</title>
     <style>
         fieldset{
@@ -22,6 +32,18 @@
           alert("The application is valid only if you are over 20 years old!");
         }
         </script>
+<!-------------------Eventet on focus dhe on blur ne input fushat-------------------------------------------------->
+<script>
+    $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).css("background-color", "lightgray");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "white");
+      });
+    });
+    </script>
+    <!--------------------------------------------------------------------------------------------------------------->
         
 </head>
 
@@ -33,23 +55,27 @@
             <legend>Profile</legend>
             <table>
                 <tr>
-                    <td><label for="fname">First name: </label></td>
-                    <td><input type="text" name="fname" id="fname"></td>
+                    <input id="Application form" type="text">
+                    <button type="button" onclick="Name()"> Name</button>
+                    <p id="paragrafi"></p>
+                    
                 </tr>
                 <tr>
-                    <td><label for="lname">Last Name:</label></td>
-                    <td><input type="text" name="lname" id="lname"> </td>
-                        
+                    <input id="Application form" type="text">
+                    <button type="button" onclick="Surname()"> Surname</button>
+                    <p id="paragrafi"></p>
                 </tr>
                 <tr>
-                    <td><label for="email">Email: </label></td>
-                    <td><input type="email" name="email" id="email" autocomplete="off" ></td>
+                    <input id="Application form1" type="text">
+                    <button type="button" onclick="Password()">Password</button>
+                    <p id="paragrafi1"></p>
                 </tr>
                 <tr>
-                    <td><label for="pwd">Password: </label></td>
-                    <td><input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters"></td>
+                    <input id="Application form2" type="text">
+                    <button type="button" onclick="Email()"> Email</button>
+                    <p id="paragrafi2"></p>
+                    
                 </tr>
-
 
 
 
@@ -180,7 +206,7 @@
               document.getElementById("country").innerHTML = text;
             }
             </script>
-            
+              <script src="js/errors.js"></script>
 
 </body>
 </html>

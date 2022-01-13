@@ -6,7 +6,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Kaushan+Script&family=Pushster&family=The+Nautigal&display=swap" rel="stylesheet">
-        <style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jquery-1.11.2.min.js"></script>
+      
+        <script type = "text/javascript" language = "javascript">
+          $(document).ready(function() {
+             $("p").css("background-color", "black");
+          });
+       </script>
+      
+      
+      
+      
+      
+      <style>
                 
             .wrap {
                 width:800px;
@@ -64,17 +77,17 @@
         </style>
         <script>
           function allowDrop(icon) {
-            icon.preventDefault();
+            icon.preventDefault();// Lejon opeacionin Drop 
           }
           
           function drag(icon) {
-            icon.dataTransfer.setData("text", icon.target.id);
+            icon.dataTransfer.setData("text", icon.target.id);// Specifikon te llojin dhe te dhenen e drag-it
           }
           
           function drop(icon) {
             icon.preventDefault();
-            var data = icon.dataTransfer.getData("text");
-            icon.target.appendChild(document.getElementById(data));
+            var data = icon.dataTransfer.getData("text");// I merr te dhenat te drag-it 
+            icon.target.appendChild(document.getElementById(data)); // Te dhenat nga dragu i vendos ne drop
           }
           </script>
     </head>
@@ -196,6 +209,33 @@
               <p class="copyright">
                 Alerdo @2021
               </p>
+
+                            <!---------Perdorimi i MaxValue, toString(), NAN, toExponential ------------------->
+                            <p id="string"></p>
+                            <p id="demo"></p>
+                            <p id="NAN"></p>
+                            <p id="MAX_VALUE"></p>
+                            
+              
+                            <script>
+                            
+                            let text = new String("toString() kthen permbajtjen e nje string objekti");
+                            let result = text.toString();
+              
+                            document.getElementById("string").innerHTML = result; 
+                            console.log(result);
+                            let num = 9.58789;
+                            let n = num.toExponential(3);
+                            document.getElementById("demo").innerHTML = n;
+                            console.log(n);
+                            let x = Number.NaN;
+                            document.getElementById("NAN").innerHTML = x;
+                            console.log(x);
+                            let z = 100; 
+                            document.getElementById("MAX_VALUE").innerHTML = z.MAX_VALUE;
+                            console.log(z.MAX_VALUE);
+                            </script>
+<!-------------------------------------------------------------------------------------------------------------------->              
         
          
         

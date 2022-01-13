@@ -60,7 +60,7 @@ nav .menu{
     
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover{ 
     background: #fff;
     color: #333;
     width: 100%;
