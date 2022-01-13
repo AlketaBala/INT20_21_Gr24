@@ -250,7 +250,40 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
 
           <a href="https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/" target="_blank" > See 35 powerful photos that tell a story</a>
        </div>
-      
+       <!---------------------Perdorimi i PROTOTIPEVE----------------------------------------------------->
+  <script>
+       // funksioni i konstruktorit
+            function Person () {
+            this.name = 'Lianna',
+            this.age = 23
+}
+
+       // krijojme objektet
+        const person1 = new Person();
+        const person2 = new Person();
+
+      // Shtojme veqorine gender tek konstruktori
+      Person.prototype.gender = 'female';
+
+       //Prototype vlera e Person 
+       console.log(Person.prototype);
+
+      //Trashegohet veqoria nga prototype
+      console.log(person1.gender);
+      console.log(person2.gender);
+
+      // shtojme nje metode ne konstruktor
+      Person.prototype.greet = function() {
+      console.log('hello' + ' ' +  this.name);
+        }
+
+      person1.greet(); // hello Lianna
+      person2.greet(); // hello Lianna
+
+ </script>
+ <!------------------------------------------------------------------------------------------------------------------------------->
+
+
        <script>
          // Javascript per Drejtkendeshin//
         var c = document.getElementById("myCanvas");
@@ -265,6 +298,7 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
         ctx.fillStyle = grd;// krijimi i drejtkendeshit ne 2d
         ctx.fillRect(10,10,150,80);
         </script>
+        
 
     
        
