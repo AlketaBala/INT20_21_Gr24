@@ -196,6 +196,33 @@
               <p class="copyright">
                 Alerdo @2021
               </p>
+
+                            <!---------Perdorimi i MaxValue, toString(), NAN, toExponential ------------------->
+                            <p id="string"></p>
+                            <p id="demo"></p>
+                            <p id="NAN"></p>
+                            <p id="MAX_VALUE"></p>
+                            
+              
+                            <script>
+                            
+                            let text = new String("toString() kthen permbajtjen e nje string objekti");
+                            let result = text.toString();
+              
+                            document.getElementById("string").innerHTML = result; 
+                            console.log(result);
+                            let num = 9.58789;
+                            let n = num.toExponential(3);
+                            document.getElementById("demo").innerHTML = n;
+                            console.log(n);
+                            let x = Number.NaN;
+                            document.getElementById("NAN").innerHTML = x;
+                            console.log(x);
+                            let z = 100; 
+                            document.getElementById("MAX_VALUE").innerHTML = z.MAX_VALUE;
+                            console.log(z.MAX_VALUE);
+                            </script>
+<!-------------------------------------------------------------------------------------------------------------------->              
         
          
         
