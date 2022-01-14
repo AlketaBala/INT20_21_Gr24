@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 
   $("#add").click(function(){
-    $("ul").append("<li>  Where & when are you going to shoot your narrative?</li>");
+    $("#add1").append("<li>  Where & when are you going to shoot your narrative?</li>");
   });
   
 });
@@ -209,7 +209,7 @@ $(document).ready(function(){
 <!----------------------------------------------------------------- Perdorimi i getElementById dhe metodes replace() -------------------------------------->
 
 <p id="demo">More about Storytelling. Click on the button </p>
-<button type="button" onclick="myFunction()">Click Me!</button><br><br>
+<button type="button" onclick="myFunction()" style="border-radius: 23px;padding:8px">Click Me!</button><br><br>
 <script>
 function myFunction() { 
   var z='<img src="./images/47.jpeg" width="35%" height="500px" >';
@@ -223,7 +223,7 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
 
 <!----------------------Perdorimi i te gjitha llojeve te listave------------------------>
 <button id="add" style="color:rgb(0, 0, 0);border: none;font-size: 20px;"><b>THINGS TO CONSIDER WHEN PLANNING YOUR PHOTO STORY</b></button>
-
+<div id="add1">
           <ul>
             <li>What is your story about?</li>
             <li> Who is in your story? Do you need to involve other people?</li>
@@ -232,6 +232,7 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
 
 
           </ul>
+    </div>
           <br>
          
             
@@ -275,8 +276,8 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
         </div>
 
         <!----------------------------------------Përdorimi i jQuery efekteve (Hide, Show)--------------------------->
-        <button id="show">Storytelling</button>
-        <button id="hide">Close</button>
+        <button id="show"style="border-radius: 23px;padding:8px">Storytelling</button>
+        <button id="hide"style="border-radius: 23px;padding:8px">Close</button>
         <p style="font-size: 0.8em;"><b>Photographic storytelling is the art of conveying stories, ideas and viewpoints through the medium of photography. It is a great example of how photography is not just the practice of creating visually interesting or stunning pictures, but is about telling stories, real or fantasized.
           Here are some examples. Click on the link below:</b><a href>https://www.singlegrain.com/content-marketing-3/7-examples-of-storytelling-content-you-can-use-in-your-marketing-campaigns/</a></p>
 
@@ -377,7 +378,7 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
       document.getElementById("Date").innerHTML = date;
       </script>
       <!-------------------------------------------------------------------------------->
-      <button>Click me to hide the date and time</button>
+      <button style="border-radius: 23px;padding:8px">Click me to hide the date and time</button>
 
        
 
