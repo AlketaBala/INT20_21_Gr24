@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-<body>
 
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Tips</title>
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-1.11.2.min.js"></script>
 <script>
@@ -13,9 +17,7 @@ $(document).ready(function(){
     $("#Date").hide();
   });
 });
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+// Show and Hide effect- Storytelling
     $(document).ready(function(){
       $("#hide").click(function(){
         $("p").hide();
@@ -24,12 +26,45 @@ $(document).ready(function(){
         $("p").show();
       });
     });
-    </script>
-</head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Tips</title>
+
+    //Remove
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("#remove").remove();
+  });
+});
+
+   // Animate effect//
+    $(document).ready(function(){
+        $(".content-box").click(function(){
+          $(".content-box").animate({
+            width:'300px',
+            height:'200px'
+          },1000);
+          $(".content-after").show().animate({opacity: "1"},3000)
+          });
+
+        });
+        
+        //JQuery Add
+$(document).ready(function(){
+
+
+  $("#add").click(function(){
+    $("ul").append("<li>  Where & when are you going to shoot your narrative?</li>");
+  });
+  
+});
+// JQuery Set
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#set").attr("href", "https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/", "title", "Storytelling");      
+
+  });
+});
+</script>
+
+    
     <style>
 
 @font-face {
@@ -110,8 +145,35 @@ $(document).ready(function(){
                   
                 0%   {background-color:red; left:0px; top:0px;} 
                 25%  {background-color:grey; left:200px; top:0px;}
+                
   
   }
+  .content-box{
+        width:240px;
+        height:60px;
+        border-radius:6px;
+        background-color: rgb(0, 0, 0);
+        color:white;
+        padding:20px;
+      }
+      .content-before
+      {
+        font-size:14px;
+        font-family:arial;
+        color:#fff;
+        text-align:center;
+
+      }
+      .content-after
+      {
+        display: none;
+        font-size: 14px;
+        font-family: arial;
+        color:#fff;
+        text-align: left;
+        line-height: 16px;
+        opacity:0;
+      }
 
    </style>
    <!---------------Metoda slideToggle() dhe eventi onclick------------------------------->
@@ -147,7 +209,7 @@ $(document).ready(function(){
 <!----------------------------------------------------------------- Perdorimi i getElementById dhe metodes replace() -------------------------------------->
 
 <p id="demo">More about Storytelling. Click on the button </p>
-<button type="button" onclick="myFunction()">Click Me!</button>
+<button type="button" onclick="myFunction()">Click Me!</button><br><br>
 <script>
 function myFunction() { 
   var z='<img src="./images/47.jpeg" width="35%" height="500px" >';
@@ -160,26 +222,20 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
 </script>
 
 <!----------------------Perdorimi i te gjitha llojeve te listave------------------------>
-    <h3 >THINGS TO CONSIDER WHEN PLANNING YOUR PHOTO STORY:</h3><br>
+<button id="add" style="color:rgb(0, 0, 0);border: none;font-size: 20px;"><b>THINGS TO CONSIDER WHEN PLANNING YOUR PHOTO STORY</b></button>
 
           <ul>
             <li>What is your story about?</li>
             <li> Who is in your story? Do you need to involve other people?</li>
             <li> What research is needed? Is your story about a subject you are familiar with?</li>
             <li> What equipment will you need? With careful planning, almost everything could be shot on a simple phone camera.</li>
-            <li> Where & when are you going to shoot your narrative?</li>
 
 
           </ul>
           <br>
          
             
-             
-            
-            
-            
-
-
+    
     
              <h3>CONSIDER YOUR BEGINNING, MIDDLE & END</h3><br>
 
@@ -233,48 +289,49 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
              Consider visual or stylistic themes that you could interweave throughout your story to tie your images together.
 
            </p><br>
-          <dl>
-          <dt>Visual</dt>
-         <dd>a picture, piece of film, or display used to illustrate or accompany something.</dd>
-          <dt>Stylistic</dt>
-           <dd>of or concerning style, especially literary style. </dd>
+          <dl>   
+                 <!----------------------------------------Përdorimi i jQuery Remove --------------------------->
+
+         <button style="border:none;font-size: 20px;"> <dt>Visual</dt> </button>
+         <dd id="remove">a picture, piece of film, or display used to illustrate or accompany something.</dd>
+         <button style="border:none;font-size: 20px;"> <dt>Stylistic</dt></button> 
+           <dd id="remove" >of or concerning style, especially literary style. </dd>
          </dl>
           <br><br>
 
-          <!-------------------------------------- Perdorimi i Canvas dhe SVG ------------------------------------>
 
-
+            
             <div id="myDiv">
             </div>
-           <!-------Drejtkendeshi----------->
 
           <div id="story">
-            <canvas id="myCanvas" width="200" height="100"
-            style="border:1px solid #d3d3d3;">
-               </canvas>
-              <!------Rrethi---------->
-
-               <svg width="400" height="180">
-                <rect x="50" y="20" rx="20" ry="20" width="20" height="20" style="fill:rgb(14, 8, 8);stroke:rgb(252, 252, 252);stroke-width:5;opacity:0.5" />
-              </svg>
+            
+            
+              
+              
            <!----------------------------------------------------------------------------------------------------->
 
 
 
-            <h5>HOW TO DO STORYTELLING WITH YOUR IMAGES: 6 USEFUL TIPS</h5><br>
-            <ol>
-
-             <li>Include small details to tell a story in a single frame  </li>
-             <li>Aim for variety in a series of shots    </li>
-             <li>Take control of the entire frame    </li>
-             <li>Plan ahead with a shot list    </li>
-             <li>Emotions are an important part of storytelling    </li>
-             <li>Don’t forget about the basics    </li>
-            </ol> <br>
+           <div class ="content-box">
+            <p class="content-before" >HOW TO DO STORYTELLING WITH YOUR IMAGES</p>
+            <p class="content-after">
+          
+          
+                Include small details to tell a story in a single frame  <br>
+                Aim for variety in a series of shots    <br>
+                Take control of the entire frame    <br>
+                Plan ahead with a shot list    <br>
+                Emotions are an important part of storytelling  <br>
+                Don’t forget about the basics    <br>
+              </p>
+          
+          
+           </div>
+            
        
-
-
-          <a href="https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/" target="_blank" > See 35 powerful photos that tell a story</a>
+       
+    <button style="border:none;"><p><a href="https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/" id="set" title="Storytelling">See 35 powerful photos that tell a story</a></p></button>
        </div>
        <!---------------------Perdorimi i PROTOTIPEVE----------------------------------------------------->
   <script>
@@ -310,20 +367,7 @@ document.getElementById("demo").innerHTML = " Storytelling is timeless; an activ
  <!------------------------------------------------------------------------------------------------------------------------------->
 
 
-       <script>
-         // Javascript per Drejtkendeshin//
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        
-        // Formim i gradietve
-        var grd = ctx.createRadialGradient(75,50,5,90,60,100);
-        grd.addColorStop(0,"black");
-        grd.addColorStop(1,"white");
-        
-        // Plotsimi me gradiente
-        ctx.fillStyle = grd;// krijimi i drejtkendeshit ne 2d
-        ctx.fillRect(10,10,150,80);
-        </script>
+       
         
        <!---------Using new Date object() to represent the current date and time-------->
 
