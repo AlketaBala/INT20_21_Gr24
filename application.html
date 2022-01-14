@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
-   
-
-
-
-
-
     <title>Application Form</title>
     <style>
         fieldset{
@@ -207,6 +200,14 @@
             }
             </script>
               <script src="js/errors.js"></script>
+              <!--------------Perdorimi i metodes RegExp exec()--------------------->
+              <p id="demo"></p>
+
+              <script>
+               let text = "ALERDO PHOTOGRAPHY IS THE BEST STUDIO IN OUR WORLD";
+               let result = /ALERDO PHOTOGRAPHY/.exec(text);
+               document.getElementById("demo").innerHTML = result;
+              </script>
 
 </body>
 </html>

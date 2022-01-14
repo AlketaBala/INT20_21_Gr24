@@ -6,6 +6,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Kaushan+Script&family=Pushster&family=The+Nautigal&display=swap" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="jquery-1.11.2.min.js"></script>
+   
+        
         <style>
          
           button {
@@ -61,12 +65,12 @@
             float: right;
             width:350px;
             border-radius: 20px;
-            margin-top:50px;
+            margin-top:0px;
             margin-right:50px;
             background-color: #202020;
             word-wrap: break-word; 
           }
-          
+        
           
           
         </style>
@@ -134,6 +138,8 @@
               </aside>
               
           </div>
+          
+          
 <!---------------------------------------------------------Vendosja e entiteteve në box model----------------------------------------->
 <div style="
   background-color: lightgrey;
@@ -158,9 +164,11 @@
 
 
            <br><br><br>
-            <div style="transform: skewX(5deg); color:black; margin-top: 20em; margin-bottom:10em; margin-left: 30em;"><b>You can read more about us and our love for photography.</b></div>
+            <div style="transform: skewX(5deg); color:black; margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 27em;"><b>You can read more about us and our love for photography.</b></div>
             <br><br><br>
-
+             
             
             
            
@@ -227,7 +235,18 @@
               </tr>
             </table>
                     
-                      
+                  <!---------------------------------- Konstantet ne js---------------------------------->  
+                  <p id="demo"></p>
+
+                  <script>
+                  console.log("demo").innerHTML = 
+                    "<p><b>Math.E:</b> " + Math.E + "</p>" +
+                    "<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+                    "<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+
+                  </script>
+                  <!--------------------------------------------------------------------------------------------------------->
+                  
               <h1 style="margin-top: 2em;" id="Erza">Erza</h1>
                         <table style="border: 2px solid rgb(214, 214, 231);">
                           <tr style="color:black">
@@ -275,25 +294,17 @@ loading="lazy">
 </iframe>
 </center>  
 
+   <br>
+   <br>
+   <br>
+   <br>
+   <!---------Using new Date object() to represent the current date and time-------->
 
-  
-<!----------------------------------------------Përdorimi i JavaScript për  ngjarje (event)---------------------------------------->
+   <p id="Date"></p>
    
-   <button style="background-color:lightgray; width:60px;height:60px; float:left;" onclick="displayDate()">The time is?</button>
+   <!-------------------------------------------------------------------------------->
+   <button style="border-radius: 23px;padding:8px">Click me to hide the date and time</button>
 
-   <script>
-   function displayDate() {
-     document.getElementById("demo").innerHTML = Date();
-   }
-   </script>
-   
-   <p id="demo" style="float: left;"></p>
-
-   <br>
-   <br>
-   <br>
-   <br>
-  
  <!-------------------------------------------------------------- Foter ------------------------------------------------>
     <div id="Footer">
       <div class="social">
@@ -340,5 +351,23 @@ loading="lazy">
   </script>
   <script src="js/main.js"></script>
 
+  <script>
+    const successCallback = (positon) => {
+      console.log(positon)
+    } 
+    const errorCallback  = (error) => {
+      console.error(error);
+
+    }
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{  
+      enableHighAccuracy: true,
+      timeout: 5000
+
+    });
+    
+    
+    
+    </script>
+    
 </body>
 </html>
