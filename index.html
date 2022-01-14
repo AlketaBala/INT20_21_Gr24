@@ -130,8 +130,9 @@
             border: 3px solid black;
             outline-style: solid;
             outline-color: white;
-            outline-width: medium;">To our visitors</h1>
+            outline-width: medium;"><button style="background: rgb(9, 0, 92); font-size: 30px;color: rgb(255, 255, 255);">To our visitors</button></h1>
             <br>
+            <div id="visitor">
            <h4>Dear visitors</h4>
            <pre style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
               First of all a warm welcome to our page.It's our pleasure te meet you and to work with all of you.
@@ -140,10 +141,10 @@
               Our journey was difficult and we were rejected a lot of times from companies, but we never gave up. </strong>
               Now we have contracts with the best photography companies so don't be scared of our work.
 
-
             <u>With lots of Love-<span style="color:rgb(255, 251, 0)">ALERDO</span></u>
 
             </pre>
+          </div>
             </div>
             <div id="Footer">
             <div class="social">
@@ -178,11 +179,28 @@
        
       
              </div>
-<!-------------------------- Java Script in body-EKSTERNAL ------------------------->
+              <script>
+                    $(document).ready(function(){
+                      $("button").click(function(){
+                        $("#visitor").fadeOut()
+                    
+
+                      });
+                    
+                      
+                      $("button").click(function(){
+                      $("#visitor").fadeIn()
+
+                      });
+
+                      
+                    });
+
+             </script>
+
 
         
               <script src="js/main.js"></script>
-<!---------------------------------------------------------------------------------->
 
 
 </body>

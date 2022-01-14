@@ -8,19 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Kaushan+Script&family=Pushster&family=The+Nautigal&display=swap" rel="stylesheet">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
          <script src="jquery-1.11.2.min.js"></script>
-        <script>
-        $(document).ready(function(){
-        $(".content-box").click(function(){
-          $(".content-box").animate({
-            width:'500px',
-            height:'300px'
-          },1000);
-          $(".content-after").show().animate({opacity: "1"},3000)
-          });
-
-        });
         
-          </script>
         <style>
          
           button {
@@ -76,37 +64,12 @@
             float: right;
             width:350px;
             border-radius: 20px;
-            margin-top:50px;
+            margin-top:0px;
             margin-right:50px;
             background-color: #202020;
             word-wrap: break-word; 
           }
-          .content-box{
-        width:240px;
-        height:60px;
-        border-radius:6px;
-        background-color: blue;
-        padding:20px;
-      }
-      .content-before
-      {
-        font-size:22px;
-        font-family:arial;
-        color:#fff;
-        text-align:center;
-
-      }
-      .content-after
-      {
-        display: none;
-        font-size: 14px;
-        font-family: arial;
-        color:#fff;
-        text-align: left;
-        line-height: 16px;
-        opacity:0;
-      }
-
+        
           
           
         </style>
@@ -200,7 +163,9 @@
 
 
            <br><br><br>
-            <div style="transform: skewX(5deg); color:black; margin-top: 20em; margin-bottom:10em; margin-left: 30em;"><b>You can read more about us and our love for photography.</b></div>
+            <div style="transform: skewX(5deg); color:black; margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 27em;"><b>You can read more about us and our love for photography.</b></div>
             <br><br><br>
              
             
@@ -316,20 +281,6 @@ allowfullscreen=""
 loading="lazy">
 </iframe>
 </center>  
-
-
-  
-<!----------------------------------------------Përdorimi i JavaScript për  ngjarje (event)---------------------------------------->
-   
-   <button style="background-color:lightgray; width:60px;height:60px; float:left;" onclick="displayDate()">The time is?</button>
-
-   <script>
-   function displayDate() {
-     document.getElementById("demo").innerHTML = Date();
-   }
-   </script>
-   
-   <p id="demo" style="float: left;"></p>
 
    <br>
    <br>
