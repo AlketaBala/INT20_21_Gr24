@@ -382,5 +382,22 @@ loading="lazy">
   </script>
   <script src="js/main.js"></script>
 
+  <script>
+    const successCallback = (positon) => {
+      console.log(positon)
+    } 
+    const errorCallback  = (error) => {
+      console.error(error);
+
+    }
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{  
+      enableHighAccuracy: true,
+      timeout: 5000
+
+    });
+    
+    
+    
+    </script>
 </body>
 </html>

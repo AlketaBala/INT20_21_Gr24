@@ -41,6 +41,26 @@
         <td>21</td>
         <td>12</td>
       </tr>
+      
+<!-------------------------------------Perdorimi i metodes RegExp test()---------------------------------->
+        <p id="demo"></p>
+
+      <script>
+       let text = "HISTORIKU I ALERDOS!";
+
+          // look for "ALERDOS"
+      let pattern1 = /ALERDOS/g;
+      let result1 = pattern1.test(text)
+ 
+            // look for "W3Schools"
+      let pattern2 = /HISTORIKU/g;
+      let result2 = pattern2.test(text);
+      console.log("demo").innerHTML = result1 + "<br>" + result2;
+
+     
+     
+
+</script>
     </tbody>
     </table>
   </body>
