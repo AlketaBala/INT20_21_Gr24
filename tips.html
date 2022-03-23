@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Tips</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+  // JQuery selectors//
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#Date").hide();
+  });
+});
+</script>
+<script>
+// Show and Hide effect- Storytelling
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
+  </script>
+ 
+ <script>
+    //Remove
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("#remove").remove();
+  });
+});
+</script>
+<script>
+   // Animate effect//
+    $(document).ready(function(){
+        $(".content-box").click(function(){
+          $(".content-box").animate({
+            width:'300px',
+            height:'200px'
+          },1000);
+          $(".content-after").show().animate({opacity: "1"},3000)
+          });
+
+        });
+      </script>
+      <script>
+
+        //JQuery Add
+$(document).ready(function(){
+
+
+  $("#add").click(function(){
+    $("#add1").append("<li>  Where & when are you going to shoot your narrative?</li>");
+  });
+  
+});
+</script>
+<script>
+
+// JQuery Set
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#set").attr("href", "https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/", "title", "Storytelling");      
+
+  });
+});
+</script>
+
+    
+    <style>
+
+@font-face {
+  font-family: Kingthings;
+  src: url(Kingthings_Calligraphica_Italic-webfont.woff);
+}
+
+
+        body{
+            background-color: rgb(236, 236, 236);
+        }
+        .Lists h2{
+            font-family: Kingthings;
+            font-size: 45px;
+        }
+   
+        h2 p{
+        display:block;
+        }
+
+
+        .Lists{
+        padding: 30px;
+        font-size: 20px;
+        }
+        img{
+            float: right;
+            border-radius: 15px;
+            transform: rotate(-4deg);
+            border-width: 10px;
+           
+            
+        }
+        .audio{
+            float: right;
+            width: 25%;
+            margin-bottom: 100px;
+            margin-top: 100px;
+
+
+        }
+        #story{
+                background-image: url(./images/71.jpg), url(./images/72.webp);
+                border: 5px dashed black;
+                background-origin: content-box;
+                background-position: right top, left top;
+                background-repeat: no-repeat, repeat;
+                background-clip: border-box;
+                padding: 50px;
+            }
+            #myDiv {
+                transform: rotateZ(-45deg);
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                border: 1px solid black;
+                position: relative;
+                animation-name: example;
+                animation-duration: 4s;
+
+                }
+            #myDiva {
+                transform: rotateX(150deg);
+                width: 100px;
+                height: 10px;
+                background-color: black;
+                border: 1px solid black;
+                }
+            #Diva {
+                transform: rotateY(150deg);
+                width: 100px;
+                height: 10px;
+                background-color: black;
+                border: 1px solid black;
+                }
+
+                @keyframes example {
+                  
+                0%   {background-color:red; left:0px; top:0px;} 
+                25%  {background-color:grey; left:200px; top:0px;}
+                
+  
+  }
+  .content-box{
+        width:240px;
+        height:60px;
+        border-radius:6px;
+        background-color: rgb(0, 0, 0);
+        color:white;
+        padding:20px;
+      }
+      .content-before
+      {
+        font-size:14px;
+        font-family:arial;
+        color:#fff;
+        text-align:center;
+
+      }
+      .content-after
+      {
+        display: none;
+        font-size: 14px;
+        font-family: arial;
+        color:#fff;
+        text-align: left;
+        line-height: 16px;
+        opacity:0;
+      }
+
+   </style>
+   <!---------------Metoda slideToggle() dhe eventi onclick------------------------------->
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        $("#flip").text("IDEAS FOR INTRODUCTORY SHOTS");
+        
+        });
+      });
+      $(document).ready(function(){
+        $("#flip1").click(function(){
+          $("#panel1").slideToggle("slow");
+        $("#flip1").text("IDEAS FOR CONCLUSION SHOTS");
+        
+        });
+      });
+      </script>
+       <!------------------------------------------------------------------------------------>
+</head>
+
+  <body>
+  <!---------------------------Perdorimi i te gjitha llojeve te listave ------------------------------------>
+
+
+
+    <div class="Lists">    
+        <h2>EVERY PHOTO TELLS A STORY</h2><br>
+       <p id="keta"> <img src="./images/47.jpeg" width="35%" height="500px"></p>
+
+        
+<!----------------------------------------------------------------- Perdorimi i getElementById dhe metodes replace() -------------------------------------->
+
+<p id="demo">More about Storytelling. Click on the button </p>
+<button type="button" onclick="myFunction()" style="border-radius: 23px;padding:8px">Click Me!</button><br><br>
+<script>
+function myFunction() { 
+  var z='<img src="./images/47.jpeg" width="35%" height="500px" >';
+  var zi=z.replace("47.jpeg", "48.jpg");
+  keta.innerHTML=zi;
+
+
+document.getElementById("demo").innerHTML = " Storytelling is timeless; an activity that has been taking place for hundreds & thousands of years. Stories are an integral part of human history & culture with written & verbal tales passed down from generation to generation. A photograph will capture & freeze a moment in time whilst conveying an emotion, expressing a mood, sharing an idea & telling a narrative. All key elements of storytelling.";
+}
+</script>
+
+<!----------------------Perdorimi i te gjitha llojeve te listave------------------------>
+<button id="add" style="color:rgb(0, 0, 0);border: none;font-size: 20px;"><b>THINGS TO CONSIDER WHEN PLANNING YOUR PHOTO STORY</b></button>
+<div id="add1">
+          <ul>
+            <li>What is your story about?</li>
+            <li> Who is in your story? Do you need to involve other people?</li>
+            <li> What research is needed? Is your story about a subject you are familiar with?</li>
+            <li> What equipment will you need? With careful planning, almost everything could be shot on a simple phone camera.</li>
+
+
+          </ul>
+    </div>
+          <br>
+         
+            
+             <!--------------------------Funksion matematikore ne JS ---------------------------------->
+          <p id="demo"></p>
+
+          <script>
+          console.log("demo").innerHTML = Math.floor(4.7);
+          </script>
+          <!--------------------------------------------------------------------------------------->
+            
+            
+
+
+    
+    
+             <h3>CONSIDER YOUR BEGINNING, MIDDLE & END</h3><br>
+
+
+              <ul>
+             
+            <div id="flip"> <li><u>IDEAS FOR INTRODUCTORY SHOTS</u></li></div><br>
+            <div id="panel"><ul>
+             <li>A wide landscape shot, setting the scene & showing the location of your story.</li>
+             <li>A suitcase & train ticket illustrating the start of a journey.  </li>
+             </ul>
+            </li><br></div>
+            <div id="flip1"> <li><u>IDEAS FOR CONCLUSION SHOTS</u></li></div><br>
+            <div id="panel1"> <ol>
+           <li>Sunset at the end of your travels (although this could be considered a cliche shot!)  </li>
+           <li>The blowing out of candles on a birthday cake, the end of a year  </li>
+           <ul>
+              <li>A happy client</li>
+           </ul>
+          </ol></div><br><br>
+
+          <!--------- -Insertimi i audio files----------------->
+          <div class="audio">
+            <p id="demo"> Inspirational quotes about Photography</p>
+            
+            <script>
+            let text = document.getElementById("demo").innerHTML; 
+            document.getElementById("demo").innerHTML = text.replace("Photography", "PHOTOGRAPHY");
+            </script>
+    
+            <audio controls muted> <source src="./videos/b.mp3" type="audio/mpeg"></audio> 
+            <div id="myDiva">
+            </div>
+            <audio controls muted> <source src="./videos/b1.mp3" type="audio/mpeg"></audio>
+            <div id="Diva">
+            </div>
+        </div>
+
+        <!----------------------------------------Përdorimi i jQuery efekteve (Hide, Show)--------------------------->
+        <button id="show"style="border-radius: 23px;padding:8px">Storytelling</button>
+        <button id="hide"style="border-radius: 23px;padding:8px">Close</button>
+        <p style="font-size: 0.8em;"><b>Photographic storytelling is the art of conveying stories, ideas and viewpoints through the medium of photography. It is a great example of how photography is not just the practice of creating visually interesting or stunning pictures, but is about telling stories, real or fantasized.
+          Here are some examples. Click on the link below:</b><a href>https://www.singlegrain.com/content-marketing-3/7-examples-of-storytelling-content-you-can-use-in-your-marketing-campaigns/</a></p>
+
+
+
+        </script>
+             <h3>THEMES</h3><br>
+          <p>To keep your story interesting, you should aim for variety in your images. However, you also want visual consistency to create 
+             a cohesive story. 
+             Consider visual or stylistic themes that you could interweave throughout your story to tie your images together.
+
+           </p><br>
+          <dl>   
+                 <!----------------------------------------Përdorimi i jQuery Remove --------------------------->
+
+         <button style="border:none;font-size: 20px;"> <dt>Visual</dt> </button>
+         <dd id="remove">a picture, piece of film, or display used to illustrate or accompany something.</dd>
+         <button style="border:none;font-size: 20px;"> <dt>Stylistic</dt></button> 
+           <dd id="remove" >of or concerning style, especially literary style. </dd>
+         </dl>
+          <br><br>
+
+
+            
+            <div id="myDiv">
+            </div>
+
+          <div id="story">
+            
+            
+              
+              
+           <!----------------------------------------------------------------------------------------------------->
+
+
+
+           <div class ="content-box">
+            <p class="content-before" >HOW TO DO STORYTELLING WITH YOUR IMAGES</p>
+            <p class="content-after">
+          
+          
+                Include small details to tell a story in a single frame  <br>
+                Aim for variety in a series of shots    <br>
+                Take control of the entire frame    <br>
+                Plan ahead with a shot list    <br>
+                Emotions are an important part of storytelling  <br>
+                Don’t forget about the basics    <br>
+              </p>
+          
+          
+           </div>
+            
+       
+       
+    <button style="border:none;"><p><a href="https://www.jotform.com/photography/35-powerful-photos-that-each-tells-a-story/" id="set" title="Storytelling">See 35 powerful photos that tell a story</a></p></button>
+       </div>
+       <!---------------------Perdorimi i PROTOTIPEVE----------------------------------------------------->
+  <script>
+       // funksioni i konstruktorit
+            function Person () {
+            this.name = 'Lianna',
+            this.age = 23
+}
+
+       // krijojme objektet
+        const person1 = new Person();
+        const person2 = new Person();
+
+      // Shtojme veqorine gender tek konstruktori
+      Person.prototype.gender = 'female';
+
+       //Prototype vlera e Person 
+       console.log(Person.prototype);
+
+      //Trashegohet veqoria nga prototype
+      console.log(person1.gender);
+      console.log(person2.gender);
+
+      // shtojme nje metode ne konstruktor
+      Person.prototype.greet = function() {
+      console.log('hello' + ' ' +  this.name);
+        }
+
+      person1.greet(); // hello Lianna
+      person2.greet(); // hello Lianna
+
+ </script>
+ <!------------------------------------------------------------------------------------------------------------------------------->
+
+
+       
+        
+       <!---------Using new Date object() to represent the current date and time-------->
+
+       <p id="Date"></p>
+      <script>
+      const date = new Date();
+      document.getElementById("Date").innerHTML = date;
+      </script>
+      <!-------------------------------------------------------------------------------->
+      <button style="border-radius: 23px;padding:8px">Click me to hide the date and time</button>
+
+       
+
+</body>
+</html>

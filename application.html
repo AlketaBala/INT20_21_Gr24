@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Application Form</title>
+    <style>
+        fieldset{
+            width: 80%;
+            margin: auto;
+    
+    
+        }
+        h1{
+            font-family:  sans-serif;;
+            color: rgb(6, 18, 87);
+            text-align: center;
+        }
+    </style>
+    <script>
+        function myFunction1() {
+          alert("The application is valid only if you are over 20 years old!");
+        }
+        </script>
+<!-------------------Eventet on focus dhe on blur ne input fushat-------------------------------------------------->
+<script>
+    $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).css("background-color", "lightgray");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "white");
+      });
+    });
+    </script>
+    <!--------------------------------------------------------------------------------------------------------------->
+        
+</head>
+
+</head>
+<body  onload="myFunction1()">
+    <h1><b>Be a part of ALERDO team</b></h1>
+    <form action="" autocomplete="on">
+        <fieldset>
+            <legend>Profile</legend>
+            <table>
+                <tr>
+                    <input id="Application form" type="text">
+                    <button type="button" onclick="Name()"> Name</button>
+                    <p id="paragrafi"></p>
+                    
+                </tr>
+                <tr>
+                    <input id="Application form" type="text">
+                    <button type="button" onclick="Surname()"> Surname</button>
+                    <p id="paragrafi"></p>
+                </tr>
+                <tr>
+                    <input id="Application form1" type="text">
+                    <button type="button" onclick="Password()">Password</button>
+                    <p id="paragrafi1"></p>
+                </tr>
+                <tr>
+                    <input id="Application form2" type="text">
+                    <button type="button" onclick="Email()"> Email</button>
+                    <p id="paragrafi2"></p>
+                    
+                </tr>
+
+
+
+            </table>
+
+            <br>
+            <label for="gender"><strong>Gender:</strong></label>
+            <select id="select">
+               
+                <option value=""></option>
+            </select>
+            <br>
+        </br>
+    <br>
+    <input id="myInput" type="text">
+
+    <button onclick="myFunction()">Type your motherland to know if you can work remote</button>
+    
+    <p id="country"></p>
+    
+
+
+
+
+
+
+    </br>
+
+        <label for="place"><strong>Select your country:</strong></label>
+        <br><br>
+        <input type="text" list="place" name="place">
+
+        <datalist name="place" id="place">
+            <option value="Albania">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="Denmark">
+            <option value="Cyprus">
+            <option value="Germany">
+            <option value="Greece">
+            <option value="Kosovo">
+            <option value="Switzerland">
+            
+            
+
+        </datalist>
+
+        <p><strong>What type of session are you interested in? </strong></p>
+
+        <input type="checkbox" name="fashion" id="fashion">
+        <label for="fashion">Fashion</label><br>
+        <input type="checkbox" name="travel" id="travel">
+        <label for="travel">Travel</label><br>
+        <input type="checkbox" name="art" id="art">
+        <label for="art">Art</label><br>
+        <input type="checkbox" name="nature" id="nature">
+        <label for="nature">Nature</label><br>
+        <input type="checkbox" name="other" id="other">
+        <label for="other">Other</label><br><br><br>
+
+        <label for="myfile"><strong>Upload your CV:</strong></label> <br><br>
+        <input type="file" id="myfile" name="myfile"><br>
+        <input type="submit" value="Upload">
+
+
+        <p><strong>Tell us more about yourself</strong></p>
+
+        <textarea class="application-form-text" placeholder="Type your messsage here..." cols="30" rows="10"></textarea> <br><br>
+        <input type="submit" value="Apply">
+        
+    </fieldset>
+
+
+    </form>
+        <!----------------------------------Using Arrays to create a Select Gender Drop Down menu ------------------->
+
+    <script>
+            
+        var select = document.getElementById("select"),
+                 arr = ["Female","Male"];
+         var i=0;
+         while(i < arr.length)
+         {
+             var option = document.createElement("OPTION"),
+                 txt = document.createTextNode(arr[i]);
+             option.appendChild(txt);
+             option.setAttribute("value",arr[i]);
+             select.insertBefore(option,select.lastChild);
+             i++;  
+            }
+                 
+    </script>
+         <!------------------------------------------------------------------------------------------------------------->
+         
+         <script>
+            function myFunction() {
+              var text;
+              var country = document.getElementById("myInput").value;
+            
+              switch(country) {
+                case "Albania":
+                  text = " You can work remote";
+                break;
+                case "Kosovo":
+                  text = " You can work remote";
+                break;
+                case "America":
+                text = " You can work remote only on sundays";
+                break;
+                case "Germany":
+                text = "You can work remote only on Fridays";
+                break;
+                case "Spain":
+                text = "You can work remote only on weekend";
+                break;
+                case "Russia":
+                text = "Sorry, you can't work remote";
+                break;
+                case "China":
+                text = "Sorry you can't work remote";
+                break;
+                case "Denmark":
+                text = "You can work remote only on Fridays";
+                break;
+                default:
+                text = "Sorry we operate all over the world but the working remote is limited";
+              }
+              document.getElementById("country").innerHTML = text;
+            }
+            </script>
+              <script src="js/errors.js"></script>
+              <!--------------Perdorimi i metodes RegExp exec()--------------------->
+              <p id="demo"></p>
+
+              <script>
+               let text = "ALERDO PHOTOGRAPHY IS THE BEST STUDIO IN OUR WORLD";
+               let result = /ALERDO PHOTOGRAPHY/.exec(text);
+               document.getElementById("demo").innerHTML = result;
+              </script>
+
+</body>
+</html>

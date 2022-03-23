@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Kaushan+Script&family=Pushster&family=The+Nautigal&display=swap" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="jquery-1.11.2.min.js"></script>
+   
+        
+        <style>
+         
+          button {
+		        padding: 0.1em;
+		        width: 10em;
+		        height: 10em;
+		        position: relative;
+            background-color:#000000;
+            border: 0em solid;
+	        }
+	        button img {
+		        border-radius: 1px;
+		        position: absolute;
+		        left: 0%;
+		        top: 0%;
+            z-index: 1;
+		        box-shadow: 0;
+		        width: 10em;
+            transition: all 3s;
+	        }
+	        button:hover img {
+		        border: 2em solid rgb(245, 43, 43);
+		        border-radius: 1em;
+		        position: absolute;
+		        width: 400%;
+            z-index: 5;
+		        box-shadow: 1px 1px 5px rgb(0, 0, 0);
+		        transition: all 3s;
+          }
+
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            border-spacing: 30px;
+            width: 55%;
+            align-self: center;
+            color:white;
+          }
+
+          td, th {
+            border: 0.1em solid #ffffff;
+            border-radius: 0 2em 2em 2em;
+            text-align: left;
+            padding: 20px;
+            font-family:arial, sans-serif;
+            font-size: 16px;
+          }
+
+          tr:nth-child(even) {
+            background-color: #202020;
+          }
+          aside#sidebar{
+            float: right;
+            width:350px;
+            border-radius: 20px;
+            margin-top:0px;
+            margin-right:50px;
+            background-color: #202020;
+            word-wrap: break-word; 
+          }
+        
+          
+          
+        </style>
+    </head>
+    <body>
+        <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="tips.html">Photography Tips</a>
+            <a href="aboutus.html">About us</a>
+            <a href="Sign-up.html">Sign Up</a>
+            <a href="application.html">Application Form </a>
+        </div>
+        
+        <span style="font-size:30px;cursor:pointer;color:white; padding-left: 20px;" onclick="openNav()">&#9776;</span>
+            <div class="menu">
+                <div class="logo">
+                    <a href="./index.html"style="font-size: 60px;">Alerdo</a>
+                </div>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./aboutus.html">About us</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="about_us_section">
+              <h1 style="text-align: center;margin-top:25px;">ABOUT OUR PASSION </h1>
+              <p style="color:black;margin-top:20px; margin-left:40px; margin-left: 20em; margin-bottom: 40px;"><b> ALERDO was created by three passionate photographers that wanted to bring art into digital space</b></p>
+            </section>
+            
+        </div>
+         <!---------------------------------------------Metoda Match() ne String---------------------------------------------->
+         <p id="demo" style="text-align: center;"></p>
+         <script>
+         let text = "Alketa, Erza and Doruntina are the creators of ALERDO STUDIO.ALERDO OUR DREAM";
+         let result = text.match("ALERDO OUR DREAM");
+          
+         document.getElementById("demo").innerHTML = result;
+         </script>
+         <br>
+            
+        <center>
+
+            <button><img src="Alketa.jpg" alt="Alketa Bala"></button>
+            <button><img src="erza.jpg" alt="Erza Qorri"></button>
+            <button><img src="doruntina.jpg" alt="Doruntina Muja"></button>
+            <br><br>
+            <a href="#Alketa">Alketa</a><span style="margin-left:90px;margin-right:70px;"><a href="#Erza">Erza</a></span><a href="#Doruntina">Doruntina</a>
+        </center>
+            <br><br><br>
+            
+            
+          <div class="menu">
+              <aside id="sidebar">
+                  <div class="dark">
+                   <h3 style="color:rgb(255, 255, 255);text-align: left;margin-top:25px; margin-left: 25px;">What we do?</h3>
+                   <p style="color:rgb(255, 255, 255); text-align: right;margin-top: 50px;margin-right: 25px; margin-bottom: 25px;">Alerdo is a photographic studio. Alerdo offers services for any type of professional photography, lambing, and photos for different documents. </p>
+                  </div>
+              </aside>
+              
+          </div>
+          
+          
+<!---------------------------------------------------------Vendosja e entiteteve në box model----------------------------------------->
+<div style="
+  background-color: lightgrey;
+  width: 300px;
+  border: 5px double red;
+  padding: 50px;
+  margin: 50px;
+  outline: 5px solid black;
+  outline-offset: 15px;
+  transform: scale(1,1);"
+  >
+  
+  
+  <div>Mund t&euml; shp&euml;tojm&euml; e t&euml; p&euml;rparojm&euml; duke vepruar s&euml; bashku, jo ve&ccedil;mas.
+    BASHK&Euml;PUNIMI &Euml;SHT&Euml; &Ccedil;EL&Euml;SI I SUKSESIT.
+    <br>&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;&loz;</div>
+                
+  </div>
+
+  
+  
+
+
+           <br><br><br>
+            <div style="transform: skewX(5deg); color:black; margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 27em;"><b>You can read more about us and our love for photography.</b></div>
+            <br><br><br>
+             
+            
+            
+           
+            
+            
+
+            <center>
+              <h1 id="Doruntina" >Doruntina</h1>
+        <!----------------------------------------------------------------- Tabelat --------------------------------------------------------->
+          <table border="2px" style="border-color: white;">
+              <tr style="color:black">
+              <th>Surname:</th><th>Muja</th>           
+              </tr><tr>
+              <td colspan="2"> Name: <span style="margin-left: 8em; color:white;"><b>Doruntina</b></span></td>
+              </tr><tr style="color:black">
+                <td>Contact details:</td><td>Email:<a href="mailto: doruntinamuja@gmail.com"> doruntinamuja@gmail.com</a><p> Tel: 044-587-987 </p></td>
+              </tr><tr>
+                <td style="background-color: red;"> A LITTLE ABOUT MY PASSION FOR PHOTOGRAPHY: </td>
+                <td>    
+                  <img src="doruntina.jpg" alt="Doruntina Muja" width="250px"  style="border-radius: 2em; float:left;margin-right: 20px;"><i>Hi there, I'm Doruntina. 
+                  One of my favorite quotes comes from <abbr>Beethoven</abbr>; “To play a wrong note is insignificant. To play without passion is inexcusable.”  
+                  I love just sitting and thinking about things, and this always helps me feel better when I start picking  apart my work, my reactions, 
+                  or my life. 
+                  It’s so easy to get caught up in the minutia of life that we forget to live with joy, passion, and the occasional wild abandon. 
+                  That’s something photography has slowly taught me to do. The best images come from sessions that are playful, relaxed, fun, and 
+                  a little on the wild side. Although I study computer engineering and I love coding, in 2016 I picked up a camera and haven’t looked back.
+                  I'm so lucky that I met my friends, Alketa and Erza and we created together our little family, <span style="background-color: red;" > ALERDO </span>.We have been (and still are)
+                  continuously blown away by the incredible people we have met and captured along the way so far!          
+                  I truly believe photography is important work. Time doesn’t stop, but the camera allows us to stop time. </i>
+                  It’s a gift we can’t take for granted.
+                </td>
+             </tr>               
+          </table>
+                        
+                        
+          <h1 id="Alketa" style="margin-top: 2em;">Alketa</h1>
+            <table style="border: 2px solid rgb(214, 214, 231);">
+              <tr style="color:black">
+                <th>Surname:</th>
+                <th>Bala</th>
+                              
+              </tr>
+              <tr >
+               
+              <td colspan="2">Name: <span style="margin-left: 8em; color:white;"><b>Alketa</b></span></td>
+              </tr>
+              <tr style="color:black">
+                <td>Contact details:</td><td>Email:<a href="mailto: alketabala11@gmail.com"> alketabala11@gmail.com</a> <p> Tel: 044-235-487</p> </td>
+              </tr>
+              <tr>
+                <td style="background-color: red;"> A LITTLE ABOUT MY PASSION FOR PHOTOGRAPHY: </td>
+                <td style="text-align: right;"> 
+                  <img src="Alketa.jpg" alt="Alketa Bala" width="250px"  style="border-radius: 2em; float: right;margin-left: 20px;"><i>One's passion is a true source of individual personality. 
+                  My passions are hard to feel through reading about them, but I will take a shot at my one passion that is worth a serious attempt.I love photography.I live photography, and in fact, we all do. Photography is any moment of our lives captured to last forever.
+                  The whole concept of photography to me is magnetic. There is such a power within a single flash.
+                  "Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... it remembers little things, long after you have forgotten everything." -Aaron Siskind
+                  I fell in love with photography a long time ago. I was 13 when I first started taking photos. I captured everything. 
+                  But why? Why did I choose photography?
+                  I chose photography because I want show people the best things about themselves. I want to show the world in a different way that makes people think deeper. You see, photography is so much more then focussing and pressing a button. People who take photos are capturing the world in their own way. If 10 people take a photo of the same subject, I guarantee that the photo will look different from each person.
+                  We all have different perspectives. When someone takes a photo they are sharing their perspective, and I think that is pretty cool.
+                  Photography also tells a story. Everyone has a story. Now that people can capture images on their phones, everyone is capable of telling their own personal story through everyday photos. It is amazing that we are able to do this at the tips of our fingers.
+                  Through my photos I want capture the best aspects of my subject and tell their story. I want people to feel what the subject is feeling.</i>
+                </td>
+              </tr>
+            </table>
+                    
+                  <!---------------------------------- Konstantet ne js---------------------------------->  
+                  <p id="demo"></p>
+
+                  <script>
+                  console.log("demo").innerHTML = 
+                    "<p><b>Math.E:</b> " + Math.E + "</p>" +
+                    "<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+                    "<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+
+                  </script>
+                  <!--------------------------------------------------------------------------------------------------------->
+                  
+              <h1 style="margin-top: 2em;" id="Erza">Erza</h1>
+                        <table style="border: 2px solid rgb(214, 214, 231);">
+                          <tr style="color:black">
+                            <th>Surname:</th>
+                            <th>Qorri</th>
+                            
+                          </tr>
+                          <tr>
+                            <td colspan="2">Name: <span style="margin-left: 8em; color:white;"><b>Erza</b></span></td>
+                            
+                          </tr>
+                          
+                          <tr style="color:black">
+                            <td>Contact details:</td><td><address> <a href="mailto: erzaqorri@gmail.com"> erzaqorri@gmail.com</a><p> Tel: 044-289-356</p></address></td>
+                            </tr>
+                            <tr>
+                            <td style="background-color: red;"> A LITTLE ABOUT MY PASSION FOR PHOTOGRAPHY: </td>
+                            <td>
+                              <img src="erza.jpg" alt="Erza Qorri" width="250px"  style="border-radius: 2em; float:left;margin-right: 20px;"> <i>I love being able to give the gift of memories. You’ve probably heard the saying, “pictures are worth a thousand words.” Well, it’s true, because photographs tell such personal stories. They bring me back to such treasured moments I was experiencing with an instant recap of emotions, which I may have otherwise totally forgotten about. When I look back at photographs, they allow me to re-live certain parts of my life that I will never be able to replicate again, and I’m beyond grateful to have them. Photographs have the incredible power to make me feel happy, excited, reflective, proud, thankful, peaceful, and an abundance of love.
+                              I’m able to see the world in a unique way. I feel I have been given the gift to see beauty in everything and everyone because I’m sensitive, observant and very empathetic. I notice the details others may be oblivious to wherever I go, such as a single ray of light shining through the clouds onto the mountain, which brings me peace; the cutest tiny dimple on a smiling face. I read facial expressions and know exactly how someone’s feeling. I put myself in others shoes all the time because I treat others how I’d like to be treated and I love relating to people.</i>
+                            </td>
+                            </tr>
+                            </table>
+
+                            
+            
+                    <center>
+                      
+<!-------------------------------------------------------------- Ifram-Tabela shumekoloneshe ------------------------------------------------>
+<iframe src="HistorikuiAlerdos.html"
+height="650" 
+width="55%"
+style="border:0; margin-top: 2em; margin-bottom: 2em;" 
+allowfullscreen="" 
+loading="lazy">
+</iframe>            
+<br>
+<!-------------------------------------------------------------- Ifram ------------------------------------------------>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96772.36582084437!2d-74.06624078750613!3d40.71501300319713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27b354c293%3A0x2587a3358961049d!2sYardley%20Photo%20Studio!5e0!3m2!1sen!2s!4v1637706200196!5m2!1sen!2s"
+height="450" 
+width="700"
+style="border:0; margin-top: 2em; margin-bottom: 2em;" 
+allowfullscreen="" 
+loading="lazy">
+</iframe>
+</center>  
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <!---------Using new Date object() to represent the current date and time-------->
+
+   <p id="Date"></p>
+   
+   <!-------------------------------------------------------------------------------->
+   <button style="border-radius: 23px;padding:8px">Click me to hide the date and time</button>
+
+ <!-------------------------------------------------------------- Foter ------------------------------------------------>
+    <div id="Footer">
+      <div class="social">
+    
+            <a href="https://www.instagram.com/alerdophotography/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Alerdo-Photography-100473962483971"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/JoeMcNallyPhoto"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/AlketaBala/INT20_21_Gr24.git"><i class="fab fa-github"></i></a>
+                
+      </div>
+      <ul class="list">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="Sign-up.html">Sign Up</a>
+        </li>
+        <li>
+          <a href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Alerdo @2021
+      </p>
+
+ 
+
+</div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <script src="js/main.js"></script>
+
+  <script>
+    const successCallback = (positon) => {
+      console.log(positon)
+    } 
+    const errorCallback  = (error) => {
+      console.error(error);
+
+    }
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{  
+      enableHighAccuracy: true,
+      timeout: 5000
+
+    });
+    
+    
+    
+    </script>
+    
+</body>
+</html>
